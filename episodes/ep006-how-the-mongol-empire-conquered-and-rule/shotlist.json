@@ -1,0 +1,326 @@
+[
+ {
+  "index": 1,
+  "chapter_title": "Uyan\u0131\u015f\u0131n \u0130lk I\u015f\u0131\u011f\u0131",
+  "mode": "first_person",
+  "caption": "Bozk\u0131rda sabah",
+  "image_prompt": "stick figure man with horse, sunrise horizon",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_001.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_001.mp3"
+ },
+ {
+  "index": 2,
+  "chapter_title": "Uyan\u0131\u015f\u0131n \u0130lk I\u015f\u0131\u011f\u0131",
+  "mode": "first_person",
+  "caption": "Babam\u0131n \u00f6l\u00fcm\u00fc",
+  "image_prompt": "stick figure grieving, tombstone",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_002.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_002.mp3"
+ },
+ {
+  "index": 3,
+  "chapter_title": "Uyan\u0131\u015f\u0131n \u0130lk I\u015f\u0131\u011f\u0131",
+  "mode": "first_person",
+  "caption": "Birle\u015fme plan\u0131",
+  "image_prompt": "stick figures holding hands around fire",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_003.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_003.mp3"
+ },
+ {
+  "index": 4,
+  "chapter_title": "Uyan\u0131\u015f\u0131n \u0130lk I\u015f\u0131\u011f\u0131",
+  "mode": "first_person",
+  "caption": "Merkit zaferi",
+  "image_prompt": "stick figure archer shooting, enemy tent",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_004.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_004.mp3"
+ },
+ {
+  "index": 5,
+  "chapter_title": "Uyan\u0131\u015f\u0131n \u0130lk I\u015f\u0131\u011f\u0131",
+  "mode": "first_person",
+  "caption": "Tatarlar\u0131n yok olu\u015fu",
+  "image_prompt": "stick figure swords, fallen figures",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_005.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_005.mp3"
+ },
+ {
+  "index": 6,
+  "chapter_title": "Uyan\u0131\u015f\u0131n \u0130lk I\u015f\u0131\u011f\u0131",
+  "mode": "first_person",
+  "caption": "Tanr\u0131\u2019n\u0131n emri",
+  "image_prompt": "stick figure raising sword to sky",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_006.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_006.mp3"
+ },
+ {
+  "index": 7,
+  "chapter_title": "Mo\u011fol Ordusunun Evrimi",
+  "mode": "overview",
+  "caption": "Disiplinli s\u00fcvari",
+  "image_prompt": "stick figure archer on horse, arrow",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_007.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_007.mp3"
+ },
+ {
+  "index": 8,
+  "chapter_title": "Mo\u011fol Ordusunun Evrimi",
+  "mode": "overview",
+  "caption": "Dayan\u0131kl\u0131 atlar",
+  "image_prompt": "stick figure horse running, distance markers",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_008.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_008.mp3"
+ },
+ {
+  "index": 9,
+  "chapter_title": "Mo\u011fol Ordusunun Evrimi",
+  "mode": "overview",
+  "caption": "Kompozit yay",
+  "image_prompt": "stick figure holding bow, arrows",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_009.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_009.mp3"
+ },
+ {
+  "index": 10,
+  "chapter_title": "Mo\u011fol Ordusunun Evrimi",
+  "mode": "overview",
+  "caption": "Ku\u015fatma yetene\u011fi",
+  "image_prompt": "stick figure with ladder attacking wall",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_010.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_010.mp3"
+ },
+ {
+  "index": 11,
+  "chapter_title": "Mo\u011fol Ordusunun Evrimi",
+  "mode": "overview",
+  "caption": "Psikolojik ter\u00f6r",
+  "image_prompt": "stick figure flames over city",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_011.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_011.mp3"
+ },
+ {
+  "index": 12,
+  "chapter_title": "Mo\u011fol Ordusunun Evrimi",
+  "mode": "overview",
+  "caption": "B\u00fcy\u00fck kay\u0131plar",
+  "image_prompt": "stick figure with grave markers",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_012.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_012.mp3"
+ },
+ {
+  "index": 13,
+  "chapter_title": "Vergi ve Vassall\u0131k Politikas\u0131",
+  "mode": "first_person",
+  "caption": "\u015eehir kap\u0131s\u0131",
+  "image_prompt": "stick figure leader facing city gate",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_013.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_013.mp3"
+ },
+ {
+  "index": 14,
+  "chapter_title": "Vergi ve Vassall\u0131k Politikas\u0131",
+  "mode": "first_person",
+  "caption": "Vergi anla\u015fmas\u0131",
+  "image_prompt": "stick figure handing coin to rider",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_014.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_014.mp3"
+ },
+ {
+  "index": 15,
+  "chapter_title": "Vergi ve Vassall\u0131k Politikas\u0131",
+  "mode": "first_person",
+  "caption": "Kore trib\u00fct\u00fc",
+  "image_prompt": "stick figure with gifts, scroll",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_015.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_015.mp3"
+ },
+ {
+  "index": 16,
+  "chapter_title": "Vergi ve Vassall\u0131k Politikas\u0131",
+  "mode": "first_person",
+  "caption": "Toplu katliam",
+  "image_prompt": "stick figures falling, swords",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_016.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_016.mp3"
+ },
+ {
+  "index": 17,
+  "chapter_title": "Vergi ve Vassall\u0131k Politikas\u0131",
+  "mode": "first_person",
+  "caption": "K\u00f6yl\u00fc kat\u0131l\u0131m\u0131",
+  "image_prompt": "stick figure joining marching line",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_017.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_017.mp3"
+ },
+ {
+  "index": 18,
+  "chapter_title": "Vergi ve Vassall\u0131k Politikas\u0131",
+  "mode": "first_person",
+  "caption": "S\u00fcrd\u00fcr\u00fclebilir h\u00e2kimiyet",
+  "image_prompt": "stick figure with balance scales",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_018.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_018.mp3"
+ },
+ {
+  "index": 19,
+  "chapter_title": "Ekonomi ve Para Politikalar\u0131",
+  "mode": "overview",
+  "caption": "Ka\u011f\u0131t para",
+  "image_prompt": "stick figure holding paper note",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_019.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_019.mp3"
+ },
+ {
+  "index": 20,
+  "chapter_title": "Ekonomi ve Para Politikalar\u0131",
+  "mode": "overview",
+  "caption": "Notalar\u0131 yok etme",
+  "image_prompt": "stick figure burning paper",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_020.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_020.mp3"
+ },
+ {
+  "index": 21,
+  "chapter_title": "Ekonomi ve Para Politikalar\u0131",
+  "mode": "overview",
+  "caption": "\u00c7e\u015fitli para birimleri",
+  "image_prompt": "stick figure with coin and ingot",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_021.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_021.mp3"
+ },
+ {
+  "index": 22,
+  "chapter_title": "Ekonomi ve Para Politikalar\u0131",
+  "mode": "overview",
+  "caption": "Yuan para sistemi",
+  "image_prompt": "stick figure with scroll and bag of coins",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_022.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_022.mp3"
+ },
+ {
+  "index": 23,
+  "chapter_title": "Ekonomi ve Para Politikalar\u0131",
+  "mode": "overview",
+  "caption": "Finansal kolayl\u0131k",
+  "image_prompt": "stick figure with tax ledger",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_023.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_023.mp3"
+ },
+ {
+  "index": 24,
+  "chapter_title": "Ekonomi ve Para Politikalar\u0131",
+  "mode": "overview",
+  "caption": "Ticaret canlanmas\u0131",
+  "image_prompt": "stick figure caravan with goods",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_024.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_024.mp3"
+ },
+ {
+  "index": 25,
+  "chapter_title": "K\u00fclt\u00fcr ve G\u00fcnl\u00fck Ya\u015fam",
+  "mode": "first_person",
+  "caption": "K\u0131\u015f ve yaz yemekleri",
+  "image_prompt": "stick figure with bowl of meat, another with cup",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_025.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_025.mp3"
+ },
+ {
+  "index": 26,
+  "chapter_title": "K\u00fclt\u00fcr ve G\u00fcnl\u00fck Ya\u015fam",
+  "mode": "first_person",
+  "caption": "At kurban\u0131",
+  "image_prompt": "stick figure with knife over horse",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_026.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_026.mp3"
+ },
+ {
+  "index": 27,
+  "chapter_title": "K\u00fclt\u00fcr ve G\u00fcnl\u00fck Ya\u015fam",
+  "mode": "first_person",
+  "caption": "Et servisi",
+  "image_prompt": "stick figure serving meat on skewer",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_027.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_027.mp3"
+ },
+ {
+  "index": 28,
+  "chapter_title": "K\u00fclt\u00fcr ve G\u00fcnl\u00fck Ya\u015fam",
+  "mode": "first_person",
+  "caption": "\u015earap ve e\u011flence",
+  "image_prompt": "stick figure raising cup, music notes",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_028.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_028.mp3"
+ },
+ {
+  "index": 29,
+  "chapter_title": "K\u00fclt\u00fcr ve G\u00fcnl\u00fck Ya\u015fam",
+  "mode": "first_person",
+  "caption": "Ba\u2019urchi g\u00f6revi",
+  "image_prompt": "stick figure with chef hat and sword",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_029.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_029.mp3"
+ },
+ {
+  "index": 30,
+  "chapter_title": "K\u00fclt\u00fcr ve G\u00fcnl\u00fck Ya\u015fam",
+  "mode": "first_person",
+  "caption": "K\u00fclt\u00fcr kar\u0131\u015f\u0131m\u0131",
+  "image_prompt": "stick figure with two flags merged",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_030.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_030.mp3"
+ },
+ {
+  "index": 31,
+  "chapter_title": "Miras ve D\u00fc\u015f\u00fcnceler",
+  "mode": "overview",
+  "caption": "\u0130mparatorlu\u011fun b\u00f6l\u00fcnmesi",
+  "image_prompt": "stick figure map split into four parts",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_031.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_031.mp3"
+ },
+ {
+  "index": 32,
+  "chapter_title": "Miras ve D\u00fc\u015f\u00fcnceler",
+  "mode": "overview",
+  "caption": "Hanl\u0131klar\u0131n \u00e7\u00f6k\u00fc\u015f\u00fc",
+  "image_prompt": "stick figure with broken crown",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_032.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_032.mp3"
+ },
+ {
+  "index": 33,
+  "chapter_title": "Miras ve D\u00fc\u015f\u00fcnceler",
+  "mode": "overview",
+  "caption": "Pax Mongolica",
+  "image_prompt": "stick figure with globe and arrows",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_033.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_033.mp3"
+ },
+ {
+  "index": 34,
+  "chapter_title": "Miras ve D\u00fc\u015f\u00fcnceler",
+  "mode": "overview",
+  "caption": "Katliam tart\u0131\u015fmas\u0131",
+  "image_prompt": "stick figure with question mark over crowd",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_034.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_034.mp3"
+ },
+ {
+  "index": 35,
+  "chapter_title": "Miras ve D\u00fc\u015f\u00fcnceler",
+  "mode": "overview",
+  "caption": "Modern etkiler",
+  "image_prompt": "stick figure with modern building",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_035.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_035.mp3"
+ },
+ {
+  "index": 36,
+  "chapter_title": "Miras ve D\u00fc\u015f\u00fcnceler",
+  "mode": "overview",
+  "caption": "D\u00fc\u015f\u00fcnceye davet",
+  "image_prompt": "stick figure looking at horizon",
+  "image": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/images/img_036.png",
+  "audio": "episodes/ep006-how-the-mongol-empire-conquered-and-rule/audio/aud_036.mp3"
+ }
+]

@@ -1,0 +1,225 @@
+{
+ "title": "Mo\u011fol \u0130mparatorlu\u011fu: Fetih, Korku ve Y\u00f6netim",
+ "description": "Mo\u011follar\u0131n en b\u00fcy\u00fck k\u0131ta imparatorlu\u011funu nas\u0131l kurdu\u011funu ve y\u00f6netti\u011fini anlatan belgesel. Kaynaklar: https://en.wikipedia.org/wiki/Destruction_under_the_Mongol_Empire, https://en.wikipedia.org/wiki/Society_of_the_Mongol_Empire, https://en.wikipedia.org/wiki/Mongol_conquests, https://en.wikipedia.org/wiki/Mongol_Empire",
+ "hashtags": [
+  "#history"
+ ],
+ "chapters": [
+  {
+   "chapter_title": "Uyan\u0131\u015f\u0131n \u0130lk I\u015f\u0131\u011f\u0131",
+   "mode": "first_person",
+   "beats": [
+    {
+     "narration": "Sabah\u0131n erken saatlerinde, \u00e7ad\u0131r\u0131m\u0131n \u00f6n\u00fcnde at\u0131m\u0131 s\u00fcz\u00fcyorum. \u00c7evremdeki bozk\u0131r h\u00e2l\u00e2 sessiz, ama uzaklarda bir kervan\u0131n \u00e7\u0131\u011fl\u0131klar\u0131 duyuluyor.",
+     "caption": "Bozk\u0131rda sabah",
+     "image_prompt": "stick figure man with horse, sunrise horizon"
+    },
+    {
+     "narration": "Kabileler aras\u0131ndaki \u00e7eki\u015fmelerin ortas\u0131nda, babam Yesugei\u2019nin \u00f6l\u00fcm haberi beni derin bir \u00f6fkeye s\u00fcr\u00fckl\u00fcyor. Bu \u00f6fke, ilerideki b\u00fcy\u00fck bir birli\u011fin k\u0131v\u0131lc\u0131m\u0131 olacak.",
+     "caption": "Babam\u0131n \u00f6l\u00fcm\u00fc",
+     "image_prompt": "stick figure grieving, tombstone"
+    },
+    {
+     "narration": "Karde\u015flerim ve eski dostlar\u0131m, bana bir yol g\u00f6steriyor: di\u011fer kabileleri birle\u015ftirip tek bir ordu kurmak. Bu hayal, benim ad\u0131m Tem\u00fcjin\u2019in, yani Cengiz Han\u2019\u0131n, do\u011fu\u015funa i\u015faret ediyor.",
+     "caption": "Birle\u015fme plan\u0131",
+     "image_prompt": "stick figures holding hands around fire"
+    },
+    {
+     "narration": "\u0130lk b\u00fcy\u00fck zaferimiz, Merkit \u00e7etelerinin k\u00f6ylerini geri almakt\u0131. Bu zafer, bana ve atalar\u0131ma inan\u00e7 kazand\u0131rd\u0131, ama ayn\u0131 zamanda kanla \u00f6r\u00fclm\u00fc\u015f bir gelece\u011fin habercisiydi.",
+     "caption": "Merkit zaferi",
+     "image_prompt": "stick figure archer shooting, enemy tent"
+    },
+    {
+     "narration": "1202\u2019de, Tatarlar\u0131 yok ettik; her erkek ve erkek \u00e7ocu\u011fu \u00f6ld\u00fcr\u00fcld\u00fc, kad\u0131nlar k\u00f6lele\u015ftirildi. Bu, korkunun bir silah olarak nas\u0131l kullan\u0131laca\u011f\u0131n\u0131 g\u00f6steren ac\u0131 bir \u00f6rnek.",
+     "caption": "Tatarlar\u0131n yok olu\u015fu",
+     "image_prompt": "stick figure swords, fallen figures"
+    },
+    {
+     "narration": "Bu kanl\u0131 ba\u015flang\u0131\u00e7, beni ve ordumu, \u201cher \u015fey Tanr\u0131\u2019n\u0131n emriyle\u201d diye hayk\u0131rarak, d\u00fcnyay\u0131 fethetmeye iten bir inan\u00e7la doldurdu.",
+     "caption": "Tanr\u0131\u2019n\u0131n emri",
+     "image_prompt": "stick figure raising sword to sky"
+    }
+   ]
+  },
+  {
+   "chapter_title": "Mo\u011fol Ordusunun Evrimi",
+   "mode": "overview",
+   "beats": [
+    {
+     "narration": "Genghis Khan, geleneksel g\u00f6\u00e7ebe s\u00fcvari ok\u00e7ular\u0131n\u0131, disiplinli bir orduya d\u00f6n\u00fc\u015ft\u00fcrd\u00fc. Her yeti\u015fkin erkek bir askerdi ve maa\u015f almaz, ganimetle beslenirdi.",
+     "caption": "Disiplinli s\u00fcvari",
+     "image_prompt": "stick figure archer on horse, arrow"
+    },
+    {
+     "narration": "Atlar\u0131, bir g\u00fcnde be\u015f ya da alt\u0131 kez de\u011fi\u015ftirerek uzun mesafeler kat edebiliyordu; bir at 600 mil yol alabilirdi. Bu dayan\u0131kl\u0131l\u0131k, sava\u015f alan\u0131nda \u00fcst\u00fcnl\u00fck sa\u011flad\u0131.",
+     "caption": "Dayan\u0131kl\u0131 atlar",
+     "image_prompt": "stick figure horse running, distance markers"
+    },
+    {
+     "narration": "Kompozit yay, 325 metre menzile sahipti, ko\u015fullu ko\u015fullarda 530 metreye ula\u015fabiliyordu. Her asker en az bir yay ve \u00fc\u00e7 ok \u00e7uval\u0131 ta\u015f\u0131yordu.",
+     "caption": "Kompozit yay",
+     "image_prompt": "stick figure holding bow, arrows"
+    },
+    {
+     "narration": "Mongol ordusu, \u00f6nceki g\u00f6\u00e7ebe ordular\u0131n zay\u0131fl\u0131\u011f\u0131 olan ku\u015fatma yetene\u011fini geli\u015ftirdi; m\u00fchendislik ve taktiksel esneklik sayesinde kaleleri de y\u0131kt\u0131.",
+     "caption": "Ku\u015fatma yetene\u011fi",
+     "image_prompt": "stick figure with ladder attacking wall"
+    },
+    {
+     "narration": "Sava\u015flar\u0131n bir di\u011fer y\u00f6n\u00fc, psikolojik ter\u00f6rd\u00fc. Direni\u015f g\u00f6steren \u015fehirler topluca yok edilir, bu da di\u011fer topluluklar\u0131n teslim olmas\u0131n\u0131 sa\u011flard\u0131.",
+     "caption": "Psikolojik ter\u00f6r",
+     "image_prompt": "stick figure flames over city"
+    },
+    {
+     "narration": "Bu taktik, Orta Asya, \u0130ran ve \u00c7in\u2019deki b\u00fcy\u00fck n\u00fcfus kay\u0131plar\u0131na yol a\u00e7t\u0131; baz\u0131 tahminler 40\u201160 milyon \u00f6l\u00fcye i\u015faret ediyor, ancak bu rakamlar tart\u0131\u015fmal\u0131d\u0131r.",
+     "caption": "B\u00fcy\u00fck kay\u0131plar",
+     "image_prompt": "stick figure with grave markers"
+    }
+   ]
+  },
+  {
+   "chapter_title": "Vergi ve Vassall\u0131k Politikas\u0131",
+   "mode": "first_person",
+   "beats": [
+    {
+     "narration": "Bir \u015fehir kap\u0131s\u0131na geldi\u011fimde, savunmas\u0131z halk\u0131n g\u00f6zlerinde bir umut \u0131\u015f\u0131\u011f\u0131 g\u00f6rd\u00fcm. Onlara tek se\u00e7enek: teslim olun ya da yok olun.",
+     "caption": "\u015eehir kap\u0131s\u0131",
+     "image_prompt": "stick figure leader facing city gate"
+    },
+    {
+     "narration": "Teslim olanlar, d\u00fczenli vergi \u00f6deyerek, baz\u0131 Mongol yerle\u015fimcileri kabul ederek ve asker g\u00f6ndermekle vassal oldular. Bu, imparatorlu\u011fa s\u00fcrekli bir gelir ak\u0131\u015f\u0131 sa\u011flad\u0131.",
+     "caption": "Vergi anla\u015fmas\u0131",
+     "image_prompt": "stick figure handing coin to rider"
+    },
+    {
+     "narration": "Goryeo Kore\u2019si, 10.000 su samuru derisi, 20.000 at ve binlerce ipek gibi \u00e7e\u015fitli trib\u00fctler \u00f6deyerek \u00f6zerkli\u011fini korudu. Bu, Mongollar\u0131n sadece y\u0131k\u0131m de\u011fil, uzla\u015fma da sundu\u011funu g\u00f6steriyor.",
+     "caption": "Kore trib\u00fct\u00fc",
+     "image_prompt": "stick figure with gifts, scroll"
+    },
+    {
+     "narration": "Direni\u015f edenler ise topluca katledildi; bir \u015fehir direndi\u011finde, t\u00fcm ordu o \u015fehri yerle bir ederdi. Bu korku, di\u011fer \u015fehirlerin boyun e\u011fmesini sa\u011flad\u0131.",
+     "caption": "Toplu katliam",
+     "image_prompt": "stick figures falling, swords"
+    },
+    {
+     "narration": "K\u00f6yl\u00fcler s\u0131k s\u0131k Mongol birliklerine kat\u0131l\u0131yor ya da taleplerini kabul ediyordu. B\u00f6ylece imparatorluk, yerel n\u00fcfusu tamamen yok etmeden geni\u015fledi.",
+     "caption": "K\u00f6yl\u00fc kat\u0131l\u0131m\u0131",
+     "image_prompt": "stick figure joining marching line"
+    },
+    {
+     "narration": "Bu sistem, Mo\u011follar\u0131n geni\u015f bir co\u011frafyada uzun vadeli h\u00e2kimiyet kurmas\u0131n\u0131 m\u00fcmk\u00fcn k\u0131ld\u0131; vergi geliri, askeri g\u00fcc\u00fcn s\u00fcrd\u00fcr\u00fclebilirli\u011fini sa\u011flad\u0131.",
+     "caption": "S\u00fcrd\u00fcr\u00fclebilir h\u00e2kimiyet",
+     "image_prompt": "stick figure with balance scales"
+    }
+   ]
+  },
+  {
+   "chapter_title": "Ekonomi ve Para Politikalar\u0131",
+   "mode": "overview",
+   "beats": [
+    {
+     "narration": "1227\u2019de ka\u011f\u0131t para kullan\u0131lmaya ba\u015fland\u0131; bu para, de\u011ferini ipek ve de\u011ferli metallere ba\u011flad\u0131. B\u00f6ylece uzun mesafeli ticaret daha pratik h\u00e2le geldi.",
+     "caption": "Ka\u011f\u0131t para",
+     "image_prompt": "stick figure holding paper note"
+    },
+    {
+     "narration": "Mongol h\u00fck\u00fcmeti, eski notalar\u0131 yok eden bir birim kurdu; bu, paran\u0131n a\u015f\u0131r\u0131 bas\u0131m\u0131n\u0131 \u00f6nlemek i\u00e7indi.",
+     "caption": "Notalar\u0131 yok etme",
+     "image_prompt": "stick figure burning paper"
+    },
+    {
+     "narration": "\u00c7in\u2019de g\u00fcm\u00fc\u015f k\u00fcl\u00e7eleri resmi hesap birimi olurken, Bat\u0131\u2019da Alt\u0131n ve g\u00fcm\u00fc\u015f sikke dola\u015f\u0131ma girdi. Farkl\u0131 b\u00f6lgelerde yerel para birimleri kullan\u0131lmas\u0131na izin verildi.",
+     "caption": "\u00c7e\u015fitli para birimleri",
+     "image_prompt": "stick figure with coin and ingot"
+    },
+    {
+     "narration": "Kublay Han\u2019\u0131n Yuan hanedan\u0131, ka\u011f\u0131t paray\u0131 g\u00fcm\u00fc\u015fle destekleyerek, vergileri nakde \u00e7evirip ta\u015f\u0131ma maliyetlerini azaltt\u0131.",
+     "caption": "Yuan para sistemi",
+     "image_prompt": "stick figure with scroll and bag of coins"
+    },
+    {
+     "narration": "Bu finansal yenilikler, Mo\u011follar\u0131n geni\u015f topraklarda vergileri toplamas\u0131n\u0131 ve ordular\u0131n\u0131 beslemesini kolayla\u015ft\u0131rd\u0131.",
+     "caption": "Finansal kolayl\u0131k",
+     "image_prompt": "stick figure with tax ledger"
+    },
+    {
+     "narration": "Paran\u0131n standartla\u015fmas\u0131, ayn\u0131 zamanda Do\u011fu ile Bat\u0131 aras\u0131ndaki ticareti canland\u0131rd\u0131; ipek, baharat ve teknoloji h\u0131zla yay\u0131ld\u0131.",
+     "caption": "Ticaret canlanmas\u0131",
+     "image_prompt": "stick figure caravan with goods"
+    }
+   ]
+  },
+  {
+   "chapter_title": "K\u00fclt\u00fcr ve G\u00fcnl\u00fck Ya\u015fam",
+   "mode": "first_person",
+   "beats": [
+    {
+     "narration": "K\u0131\u015f\u0131n \u00e7ad\u0131r\u0131mda otururken, k\u0131rm\u0131z\u0131 yiyecekler\u2014kavrulmu\u015f et ve kurutulmu\u015f et\u2014masam\u0131n ba\u015f\u0131nda yer al\u0131yor. Yaz\u0131n ise beyaz yiyecekler\u2014yo\u011furt ve fermente at s\u00fct\u00fc\u2014\u00f6n planda.",
+     "caption": "K\u0131\u015f ve yaz yemekleri",
+     "image_prompt": "stick figure with bowl of meat, another with cup"
+    },
+    {
+     "narration": "Atlar\u0131 \u00f6ld\u00fcrmek bir t\u00f6ren i\u015fiydi; aortay\u0131 s\u0131k\u0131\u015ft\u0131rarak kan\u0131 i\u00e7inde tutarlard\u0131. Kan, \u00e7orbalarda ve sosislerde bir lezzet unsuru olurdu.",
+     "caption": "At kurban\u0131",
+     "image_prompt": "stick figure with knife over horse"
+    },
+    {
+     "narration": "B\u00fcy\u00fck toplant\u0131larda et, k\u00fc\u00e7\u00fck \u015fi\u015flere kesilir ve misafirlere parmakla servis edilirdi. Sosyal s\u0131n\u0131flar, etin hangi k\u0131sm\u0131n\u0131 alacaklar\u0131yla belirlenirdi.",
+     "caption": "Et servisi",
+     "image_prompt": "stick figure serving meat on skewer"
+    },
+    {
+     "narration": "Alkol, \u00f6zellikle \u00c7in pirin\u00e7 \u015farab\u0131 ve Orta Asya \u00fcz\u00fcm \u015farab\u0131, kutlamalar\u0131n vazge\u00e7ilmeziydi. \u015earap i\u00e7ildikten sonra \u015fark\u0131 ve dans ba\u015flard\u0131.",
+     "caption": "\u015earap ve e\u011flence",
+     "image_prompt": "stick figure raising cup, music notes"
+    },
+    {
+     "narration": "Mutfak g\u00f6revlileri, yani ba\u2019urchi, sadece yemek yapmaz, ayn\u0131 zamanda imparatorun yak\u0131n \u00e7evresinde askeri komuta da ta\u015f\u0131rlard\u0131.",
+     "caption": "Ba\u2019urchi g\u00f6revi",
+     "image_prompt": "stick figure with chef hat and sword"
+    },
+    {
+     "narration": "Bu k\u00fclt\u00fcrel kar\u0131\u015f\u0131m, Mo\u011follar\u0131n fethetti\u011fi topraklarda yerel gelenekleri korurken, kendi ya\u015fam tarzlar\u0131n\u0131 da yaymalar\u0131na izin verdi.",
+     "caption": "K\u00fclt\u00fcr kar\u0131\u015f\u0131m\u0131",
+     "image_prompt": "stick figure with two flags merged"
+    }
+   ]
+  },
+  {
+   "chapter_title": "Miras ve D\u00fc\u015f\u00fcnceler",
+   "mode": "overview",
+   "beats": [
+    {
+     "narration": "1260\u2019a gelindi\u011finde, imparatorluk b\u00f6l\u00fcnmeye ba\u015flad\u0131; d\u00f6rt b\u00fcy\u00fck hanl\u0131k ortaya \u00e7\u0131kt\u0131 ve her biri kendi y\u00f6neticisini se\u00e7ti.",
+     "caption": "\u0130mparatorlu\u011fun b\u00f6l\u00fcnmesi",
+     "image_prompt": "stick figure map split into four parts"
+    },
+    {
+     "narration": "Kublay Han, Do\u011fu\u2019da Yuan hanedan\u0131n\u0131 kurdu, ancak Bat\u0131\u2019da h\u00e2kimiyetini kaybetti; Alt\u0131n Orda ve \u00c7agatay hanl\u0131klar\u0131 da zamanla par\u00e7aland\u0131.",
+     "caption": "Hanl\u0131klar\u0131n \u00e7\u00f6k\u00fc\u015f\u00fc",
+     "image_prompt": "stick figure with broken crown"
+    },
+    {
+     "narration": "Mo\u011follar\u0131n b\u0131rakt\u0131\u011f\u0131 en b\u00fcy\u00fck miras, Asya\u2019y\u0131 birle\u015ftiren Pax Mongolica oldu; ticaret yollar\u0131, teknolojiler ve fikirler k\u0131talararas\u0131 aktar\u0131ld\u0131.",
+     "caption": "Pax Mongolica",
+     "image_prompt": "stick figure with globe and arrows"
+    },
+    {
+     "narration": "\u00d6te yandan, 40\u201160 milyon insan\u0131n \u00f6ld\u00fc\u011f\u00fc iddialar\u0131, bu imparatorlu\u011fun y\u0131k\u0131c\u0131 yan\u0131n\u0131 da g\u00f6zler \u00f6n\u00fcne seriyor; tarih\u00e7iler h\u00e2l\u00e2 bu rakamlar\u0131 tart\u0131\u015f\u0131yor.",
+     "caption": "Katliam tart\u0131\u015fmas\u0131",
+     "image_prompt": "stick figure with question mark over crowd"
+    },
+    {
+     "narration": "G\u00fcn\u00fcm\u00fczde, Mo\u011fol y\u00f6netimi, k\u00fclt\u00fcrel ho\u015fg\u00f6r\u00fcs\u00fc ve ekonomik yenilikleriyle modern devletlerin temelini olu\u015fturan bir \u00f6rnek olarak inceleniyor.",
+     "caption": "Modern etkiler",
+     "image_prompt": "stick figure with modern building"
+    },
+    {
+     "narration": "Ve siz, bu devasa imparatorlu\u011fun bir par\u00e7as\u0131 oldu\u011funuzu hayal etti\u011finizde, g\u00fcc\u00fcn, korkunun ve uyumun nas\u0131l i\u00e7 i\u00e7e ge\u00e7ti\u011fini d\u00fc\u015f\u00fcn\u00fcn.",
+     "caption": "D\u00fc\u015f\u00fcnceye davet",
+     "image_prompt": "stick figure looking at horizon"
+    }
+   ]
+  }
+ ]
+}

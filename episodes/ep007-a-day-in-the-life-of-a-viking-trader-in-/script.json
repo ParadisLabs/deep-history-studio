@@ -1,0 +1,225 @@
+{
+ "title": "10. y\u00fczy\u0131lda bir Viking t\u00fcccar\u0131n bir g\u00fcn\u00fc",
+ "description": "Bu b\u00f6l\u00fcm, Vikingler, ticaret a\u011flar\u0131 ve g\u00fcnl\u00fck ya\u015famlar\u0131 \u00fczerine Wikipedia kaynaklar\u0131ndan derlenmi\u015ftir. Kaynaklar: https://en.wikipedia.org/wiki/Vikings, https://en.wikipedia.org/wiki/Trade_during_the_Viking_Age, https://en.wikipedia.org/wiki/Viking_Age, https://en.wikipedia.org/wiki/St_Brice%27s_Day_massacre",
+ "hashtags": [
+  "#history"
+ ],
+ "chapters": [
+  {
+   "chapter_title": "Sabah\u0131n \u0130lk I\u015f\u0131\u011f\u0131",
+   "mode": "first_person",
+   "beats": [
+    {
+     "narration": "G\u00fcne\u015f hen\u00fcz ufukta belirmeden, k\u00f6y\u00fcn sessiz sokaklar\u0131nda y\u00fcr\u00fcr\u00fcm. \u00c7iftlik hayvanlar\u0131n\u0131n hafif h\u0131r\u0131lt\u0131s\u0131 duyulur ve ben, sabah \u00e7i\u011fini ayaklar\u0131ma \u00e7eviririm.",
+     "caption": "Sabah y\u00fcr\u00fcy\u00fc\u015f\u00fc",
+     "image_prompt": "stick figure walking on a path with a small animal"
+    },
+    {
+     "narration": "K\u00f6y meydan\u0131nda, uzun gemimizin yelkenlerini kontrol eden ustalarla bulu\u015furum. Uzun gemi, Vikinglerin denizlerdeki h\u00e2kimiyetinin simgesidir.",
+     "caption": "Gemi haz\u0131rl\u0131\u011f\u0131",
+     "image_prompt": "stick figure adjusting a sail on a long ship"
+    },
+    {
+     "narration": "Sabah kahvalt\u0131s\u0131, ekmek, peynir ve baldan olu\u015fur; bu basit yemek, uzun yolculuklar\u0131n enerjisini verir. Yemek masas\u0131nda, ailemle k\u0131sa bir sohbet ederiz.",
+     "caption": "Kahvalt\u0131 zaman\u0131",
+     "image_prompt": "stick figures sitting at a table with bread and cheese"
+    },
+    {
+     "narration": "Ticaret malzemelerimizi toplar\u0131z: g\u00fcm\u00fc\u015f k\u00fcl\u00e7eleri, deri \u00fcr\u00fcnler ve kuzey \u0131\u015f\u0131klar\u0131ndan getirilen amber. Bu mallar, uzak \u015fehirlerde y\u00fcksek de\u011fer ta\u015f\u0131r.",
+     "caption": "Malzeme toplama",
+     "image_prompt": "stick figure carrying a sack with silver and amber"
+    },
+    {
+     "narration": "K\u00f6y\u00fcn y\u00f6neticisi, vergileri toplar ve koruma kar\u015f\u0131l\u0131\u011f\u0131nda bir miktar g\u00fcm\u00fc\u015f al\u0131r. Bu, ticaret gemilerimizin g\u00fcvenli yolculuk yapmas\u0131n\u0131 sa\u011flar.",
+     "caption": "Vergi toplama",
+     "image_prompt": "stick figure handing a coin to another figure"
+    },
+    {
+     "narration": "Son bir kez g\u00f6zlerimi g\u00f6ky\u00fcz\u00fcne \u00e7eviririm; bulutlar\u0131n aras\u0131ndan y\u00fckselen kuzey \u0131\u015f\u0131klar\u0131, yeni bir maceran\u0131n habercisidir. Limana do\u011fru y\u00fcr\u00fcmeye ba\u015flar\u0131m.",
+     "caption": "Umutlu bak\u0131\u015f",
+     "image_prompt": "stick figure looking up at the sky"
+    }
+   ]
+  },
+  {
+   "chapter_title": "Limanda Ticaretin Nabz\u0131",
+   "mode": "overview",
+   "beats": [
+    {
+     "narration": "Vikingler, Ribe, Hedeby ve Birka gibi liman \u015fehirlerinde b\u00fcy\u00fck ticaret merkezleri kurmu\u015flard\u0131. Bu \u015fehirler, Balt\u0131k ve Kuzey Denizi aras\u0131ndaki ticaret yollar\u0131n\u0131n kesi\u015fim noktas\u0131yd\u0131.",
+     "caption": "B\u00fcy\u00fck limanlar",
+     "image_prompt": "stick figure standing near a dock with ships"
+    },
+    {
+     "narration": "10. y\u00fczy\u0131lda Hedeby, hem kuzey\u2011g\u00fcney hem de do\u011fu\u2011bat\u0131 rotalar\u0131n\u0131 kontrol eden bir merkezdi. N\u00fcfusu yakla\u015f\u0131k bin ki\u015fiydi ve kaleleri 10. y\u00fczy\u0131lda in\u015fa edildi.",
+     "caption": "Hedeby'nin \u00f6nemi",
+     "image_prompt": "stick figure near a small fortified wall"
+    },
+    {
+     "narration": "Vikinglerin ticaret a\u011f\u0131, Volga ve Dnieper nehirleri \u00fczerinden Bizans ve Orta Do\u011fu'ya uzan\u0131yordu. Bu rotalar, Arap sikkeleri ve \u00c7in ipekleri gibi l\u00fcks mallar\u0131 getirdi.",
+     "caption": "Uzak rotalar",
+     "image_prompt": "stick figure on a boat with arrows pointing east"
+    },
+    {
+     "narration": "Ticaret, a\u011f\u0131rl\u0131kl\u0131 olarak \u00f6l\u00e7\u00fclm\u00fc\u015f g\u00fcm\u00fc\u015f \u00fczerinden y\u00fcr\u00fct\u00fcl\u00fcrd\u00fc; bu \u201cbullion economy\u201d olarak adland\u0131r\u0131l\u0131r. G\u00fcm\u00fc\u015f, hem \u00f6deme arac\u0131 hem de de\u011fer deposuydu.",
+     "caption": "G\u00fcm\u00fc\u015f ekonomisi",
+     "image_prompt": "stick figure holding a silver bar"
+    },
+    {
+     "narration": "Limanda, yerel halk ve yabanc\u0131 t\u00fcccarlar bir arada pazarl\u0131k yapar. Arap para birimleri, \u0130skandinav topraklar\u0131na ta\u015f\u0131n\u0131r ve eriyerek yeni g\u00fcm\u00fc\u015f bloklar\u0131 olu\u015fturulur.",
+     "caption": "Pazar sahnesi",
+     "image_prompt": "stick figures exchanging goods"
+    },
+    {
+     "narration": "Bu yo\u011fun ticaret, Avrupa ekonomisinin Roma \u00e7\u00f6k\u00fc\u015f\u00fcnden sonra yeniden canlanmas\u0131na yard\u0131mc\u0131 oldu. Vikingler, hem \u00e7ald\u0131klar\u0131 hem de ticaretle kazand\u0131klar\u0131 mallarla bu s\u00fcrece katk\u0131 sa\u011flad\u0131.",
+     "caption": "Ekonomik canlanma",
+     "image_prompt": "stick figure with rising graph arrows"
+    }
+   ]
+  },
+  {
+   "chapter_title": "Deniz Yolculu\u011fu Ba\u015fl\u0131yor",
+   "mode": "first_person",
+   "beats": [
+    {
+     "narration": "Limandan ayr\u0131l\u0131rken, uzun gemimizin tahtalar\u0131 suyla bulu\u015fur ve hafif bir g\u0131c\u0131rt\u0131 duyulur. M\u00fcrettebat, k\u00fcrekleri ve yelkenleri kontrol ederken ben de kaptan k\u00f6\u015fk\u00fcne otururum.",
+     "caption": "Geminin kalk\u0131\u015f\u0131",
+     "image_prompt": "stick figure on a ship deck with sails"
+    },
+    {
+     "narration": "Kuzey r\u00fczgar\u0131 y\u00fcz\u00fcm\u00fc ok\u015far; Vikingler, r\u00fczgar\u0131 ve y\u0131ld\u0131zlar\u0131 okuyarak y\u00f6n bulurlar. G\u00f6ky\u00fcz\u00fcndeki tak\u0131my\u0131ld\u0131zlar, rotam\u0131z\u0131 belirler.",
+     "caption": "Y\u0131ld\u0131z navigasyonu",
+     "image_prompt": "stick figure looking at stars from ship"
+    },
+    {
+     "narration": "Denizdeki g\u00fcnler, taze bal\u0131k ve kurutulmu\u015f etle ge\u00e7er. Yemekler, gemideki uzun yolculuklar\u0131n temel enerji kayna\u011f\u0131d\u0131r.",
+     "caption": "Deniz yemekleri",
+     "image_prompt": "stick figure cooking on a fire aboard ship"
+    },
+    {
+     "narration": "Bir ak\u015fam, ufukta bir ba\u015fka gemi belirir; dost mu yoksa rakip mi? Uzun gemiler, genellikle ticaret ya da sald\u0131r\u0131 ama\u00e7l\u0131yd\u0131 ve ilk temas dikkatle de\u011ferlendirilirdi.",
+     "caption": "Uzak gemi",
+     "image_prompt": "stick figure pointing at another ship"
+    },
+    {
+     "narration": "Gemi demir att\u0131\u011f\u0131m\u0131z liman, Danelaw\u2019\u0131n bir par\u00e7as\u0131, J\u00f3rv\u00edk (York) olur. Burada metal i\u015f\u00e7ili\u011fi ve pamuklu kuma\u015flar gibi farkl\u0131 mallar bulunur.",
+     "caption": "J\u00f3rv\u00edk liman\u0131",
+     "image_prompt": "stick figure arriving at a harbor with buildings"
+    },
+    {
+     "narration": "Kaptan k\u00f6\u015fk\u00fcnde, bir sonraki yolculu\u011fun rotas\u0131n\u0131 \u00e7izerken, yeni f\u0131rsatlar\u0131n ve belki de yeni tehlikelerin kap\u0131da oldu\u011funu hissederim.",
+     "caption": "Yeni planlar",
+     "image_prompt": "stick figure drawing a map on a table"
+    }
+   ]
+  },
+  {
+   "chapter_title": "\u015eehirde Ticaret ve Zanaat",
+   "mode": "overview",
+   "beats": [
+    {
+     "narration": "J\u00f3rv\u00edk, metal i\u015f\u00e7ili\u011fi ve para bas\u0131m\u0131yla \u00fcnl\u00fc bir merkezdi. Viking zanaatkarlar\u0131, Avrupa\u2019n\u0131n d\u00f6rt bir yan\u0131ndan gelen hammaddeyi i\u015fleyerek de\u011ferli \u00fcr\u00fcnler \u00fcretirdi.",
+     "caption": "Metal i\u015f\u00e7ili\u011fi",
+     "image_prompt": "stick figure hammering metal on an anvil"
+    },
+    {
+     "narration": "\u015eehirdeki pazar yerinde, \u0130skandinav amberi, Britanya tin\u2019i ve Akdeniz \u015faraplar\u0131 bir arada sat\u0131l\u0131rd\u0131. Bu \u00e7e\u015fitlilik, Vikinglerin geni\u015f ticaret a\u011f\u0131n\u0131n bir g\u00f6stergesiydi.",
+     "caption": "\u00c7e\u015fitli mallar",
+     "image_prompt": "stick figures with boxes labeled amber, tin, wine"
+    },
+    {
+     "narration": "Vikingler, ticaretin yan\u0131 s\u0131ra \u00e7ift\u00e7ilik ve bal\u0131k\u00e7\u0131l\u0131k da yaparlard\u0131; bu, onlar\u0131n sadece sava\u015f\u00e7\u0131 de\u011fil, ayn\u0131 zamanda \u00fcretken topluluklar oldu\u011funu g\u00f6sterir.",
+     "caption": "\u00c7ift\u00e7ilik ve bal\u0131k\u00e7\u0131l\u0131k",
+     "image_prompt": "stick figure with a plow and another with a fishing net"
+    },
+    {
+     "narration": "Ticaret yollar\u0131, korsanlar\u0131n da ilgisini \u00e7ekerdi; bu y\u00fczden limanlar genellikle kalelerle \u00e7evriliydi ve yerel y\u00f6neticiler koruma kar\u015f\u0131l\u0131\u011f\u0131nda vergi al\u0131rlard\u0131.",
+     "caption": "Kaleler ve koruma",
+     "image_prompt": "stick figure near a small castle wall"
+    },
+    {
+     "narration": "Vikinglerin para birimi, \u00f6l\u00e7\u00fclm\u00fc\u015f g\u00fcm\u00fc\u015f ve alt\u0131ndand\u0131; bu \u201cbullion economy\u201d sayesinde uzun mesafeli al\u0131\u015fveri\u015fler sorunsuz ger\u00e7ekle\u015firdi.",
+     "caption": "G\u00fcm\u00fc\u015f para",
+     "image_prompt": "stick figure weighing silver coins"
+    },
+    {
+     "narration": "\u015eehrin sokaklar\u0131nda, eski Roma yollar\u0131n\u0131n izleri ve yeni Norve\u00e7 rune ta\u015flar\u0131 yan yana bulunur; k\u00fclt\u00fcrel bir kar\u0131\u015f\u0131m\u0131n izleri \u015fehri s\u00fcsler.",
+     "caption": "K\u00fclt\u00fcr kar\u0131\u015f\u0131m\u0131",
+     "image_prompt": "stick figure standing between a stone and a rune"
+    }
+   ]
+  },
+  {
+   "chapter_title": "Geri D\u00f6n\u00fc\u015f ve Ak\u015fam",
+   "mode": "first_person",
+   "beats": [
+    {
+     "narration": "G\u00fcn batarken, limandan ayr\u0131lmak \u00fczere haz\u0131rlan\u0131r\u0131m. Gemimiz, yeni kazan\u0131lm\u0131\u015f g\u00fcm\u00fc\u015f ve baharatlarla y\u00fckl\u00fcd\u00fcr; bu, k\u00f6y\u00fcm\u00fcze getirece\u011fimiz refah\u0131n habercisidir.",
+     "caption": "Y\u00fckleme zaman\u0131",
+     "image_prompt": "stick figure loading crates onto a ship"
+    },
+    {
+     "narration": "Deniz yolculu\u011fu s\u0131ras\u0131nda, m\u00fcrettebatla eski bir \u015fark\u0131 s\u00f6yleriz; bu \u015fark\u0131lar, nesiller boyu aktar\u0131lan denizcilik bilgilerini i\u00e7erir.",
+     "caption": "\u015eark\u0131 s\u00f6yleme",
+     "image_prompt": "stick figures singing on a ship"
+    },
+    {
+     "narration": "Yolculukta bazen f\u0131rt\u0131na \u00e7\u0131kar; Viking gemileri, sa\u011flam yap\u0131lar\u0131 sayesinde dalgalar\u0131n \u00fcstesinden gelir. F\u0131rt\u0131na sonras\u0131 g\u00f6ky\u00fcz\u00fc, yeni bir umutla parlar.",
+     "caption": "F\u0131rt\u0131na sonras\u0131",
+     "image_prompt": "stick figure holding a rope in stormy sea"
+    },
+    {
+     "narration": "K\u00f6ye vard\u0131\u011f\u0131m\u0131zda, ailemiz ve kom\u015fular\u0131m\u0131z bizi kar\u015f\u0131lar. G\u00fcm\u00fc\u015f, k\u00f6y\u00fcn kervansaray\u0131nda takas edilir ve yeni bir y\u0131l\u0131n haz\u0131rl\u0131klar\u0131 ba\u015flar.",
+     "caption": "K\u00f6y kar\u015f\u0131lama",
+     "image_prompt": "stick figures greeting a ship arriving"
+    },
+    {
+     "narration": "Ak\u015fam yeme\u011finde, denizden getirilen bal\u0131k ve limandan al\u0131nan baharatlar sofram\u0131z\u0131 s\u00fcsler. Hikayelerimiz, denizlerin ne kadar geni\u015f oldu\u011funu hat\u0131rlat\u0131r.",
+     "caption": "Ak\u015fam yeme\u011fi",
+     "image_prompt": "stick figure serving fish at a table"
+    },
+    {
+     "narration": "Yatmadan \u00f6nce, y\u0131ld\u0131zlar\u0131 izlerken, yar\u0131n yeni bir rotan\u0131n bizi bekledi\u011fini d\u00fc\u015f\u00fcn\u00fcr\u00fcm. Vikinglerin hayat\u0131, her g\u00fcn yeni bir macera demektir.",
+     "caption": "Y\u0131ld\u0131zlar alt\u0131nda",
+     "image_prompt": "stick figure lying on ground looking at stars"
+    }
+   ]
+  },
+  {
+   "chapter_title": "Miras ve D\u00fc\u015f\u00fcnceler",
+   "mode": "overview",
+   "beats": [
+    {
+     "narration": "Viking t\u00fcccarlar\u0131, sadece ya\u011fmac\u0131 de\u011fil, ayn\u0131 zamanda uzun mesafeli ticaret a\u011flar\u0131 kuran k\u00fclt\u00fcr el\u00e7ileriydi. Bu a\u011flar, Avrupa\u2019n\u0131n ekonomik canlanmas\u0131na \u00f6nc\u00fcl\u00fck etti.",
+     "caption": "Ticaret el\u00e7ileri",
+     "image_prompt": "stick figure with a globe and arrows"
+    },
+    {
+     "narration": "Onlar\u0131n uzun gemileri, kuzey denizlerinden Akdeniz\u2019e, Volga\u2019dan Atlantik\u2019e kadar uzanan rotalar\u0131 birle\u015ftirdi. Bu rotalar, bug\u00fcn bile tarih\u00e7ilerin merak\u0131n\u0131 \u00e7eker.",
+     "caption": "K\u00fcresel rotalar",
+     "image_prompt": "stick figure drawing lines across a map"
+    },
+    {
+     "narration": "Vikinglerin \u201cbullion economy\u201dsi, modern para sistemlerinin temellerine benzer bir de\u011fer \u00f6l\u00e7\u00fcm\u00fc sunuyordu. G\u00fcm\u00fc\u015f, hem \u00f6deme arac\u0131 hem de zenginlik g\u00f6stergesiydi.",
+     "caption": "G\u00fcm\u00fc\u015f temeli",
+     "image_prompt": "stick figure with a balance scale and silver"
+    },
+    {
+     "narration": "Ticaretin yan\u0131 s\u0131ra, Vikingler k\u00fclt\u00fcr, din ve teknoloji al\u0131\u015fveri\u015fi de yapt\u0131; bu, onlar\u0131n sadece sava\u015f\u00e7\u0131 de\u011fil, ayn\u0131 zamanda uyum sa\u011flay\u0131c\u0131 bir topluluk oldu\u011funu g\u00f6sterir.",
+     "caption": "K\u00fclt\u00fcr al\u0131\u015fveri\u015fi",
+     "image_prompt": "stick figure exchanging a rune for a scroll"
+    },
+    {
+     "narration": "G\u00fcn\u00fcm\u00fcz d\u00fcnyas\u0131nda, Vikinglerin denizcilik ve ticaret becerileri, k\u00fcreselle\u015fmenin erken bir \u00f6rne\u011fi olarak hat\u0131rlan\u0131r. Onlar\u0131n miras\u0131, s\u0131n\u0131rlar\u0131n \u00f6tesinde bir i\u015f birli\u011finin m\u00fcmk\u00fcn oldu\u011funu kan\u0131tlar.",
+     "caption": "K\u00fcresel miras",
+     "image_prompt": "stick figure standing on a globe"
+    },
+    {
+     "narration": "Belki de bir sonraki ke\u015fif, bir Viking t\u00fcccar\u0131n\u0131n g\u00f6z\u00fcnden d\u00fcnyay\u0131 g\u00f6rmekle ba\u015flar; o da bizim gibi merakla, umutla ve cesaretle yol al\u0131rd\u0131.",
+     "caption": "Gelecek ke\u015fif",
+     "image_prompt": "stick figure looking forward with a telescope"
+    }
+   ]
+  }
+ ]
+}

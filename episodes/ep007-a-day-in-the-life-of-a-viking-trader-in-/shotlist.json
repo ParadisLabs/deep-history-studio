@@ -1,0 +1,326 @@
+[
+ {
+  "index": 1,
+  "chapter_title": "Sabah\u0131n \u0130lk I\u015f\u0131\u011f\u0131",
+  "mode": "first_person",
+  "caption": "Sabah y\u00fcr\u00fcy\u00fc\u015f\u00fc",
+  "image_prompt": "stick figure walking on a path with a small animal",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_001.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_001.mp3"
+ },
+ {
+  "index": 2,
+  "chapter_title": "Sabah\u0131n \u0130lk I\u015f\u0131\u011f\u0131",
+  "mode": "first_person",
+  "caption": "Gemi haz\u0131rl\u0131\u011f\u0131",
+  "image_prompt": "stick figure adjusting a sail on a long ship",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_002.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_002.mp3"
+ },
+ {
+  "index": 3,
+  "chapter_title": "Sabah\u0131n \u0130lk I\u015f\u0131\u011f\u0131",
+  "mode": "first_person",
+  "caption": "Kahvalt\u0131 zaman\u0131",
+  "image_prompt": "stick figures sitting at a table with bread and cheese",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_003.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_003.mp3"
+ },
+ {
+  "index": 4,
+  "chapter_title": "Sabah\u0131n \u0130lk I\u015f\u0131\u011f\u0131",
+  "mode": "first_person",
+  "caption": "Malzeme toplama",
+  "image_prompt": "stick figure carrying a sack with silver and amber",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_004.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_004.mp3"
+ },
+ {
+  "index": 5,
+  "chapter_title": "Sabah\u0131n \u0130lk I\u015f\u0131\u011f\u0131",
+  "mode": "first_person",
+  "caption": "Vergi toplama",
+  "image_prompt": "stick figure handing a coin to another figure",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_005.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_005.mp3"
+ },
+ {
+  "index": 6,
+  "chapter_title": "Sabah\u0131n \u0130lk I\u015f\u0131\u011f\u0131",
+  "mode": "first_person",
+  "caption": "Umutlu bak\u0131\u015f",
+  "image_prompt": "stick figure looking up at the sky",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_006.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_006.mp3"
+ },
+ {
+  "index": 7,
+  "chapter_title": "Limanda Ticaretin Nabz\u0131",
+  "mode": "overview",
+  "caption": "B\u00fcy\u00fck limanlar",
+  "image_prompt": "stick figure standing near a dock with ships",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_007.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_007.mp3"
+ },
+ {
+  "index": 8,
+  "chapter_title": "Limanda Ticaretin Nabz\u0131",
+  "mode": "overview",
+  "caption": "Hedeby'nin \u00f6nemi",
+  "image_prompt": "stick figure near a small fortified wall",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_008.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_008.mp3"
+ },
+ {
+  "index": 9,
+  "chapter_title": "Limanda Ticaretin Nabz\u0131",
+  "mode": "overview",
+  "caption": "Uzak rotalar",
+  "image_prompt": "stick figure on a boat with arrows pointing east",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_009.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_009.mp3"
+ },
+ {
+  "index": 10,
+  "chapter_title": "Limanda Ticaretin Nabz\u0131",
+  "mode": "overview",
+  "caption": "G\u00fcm\u00fc\u015f ekonomisi",
+  "image_prompt": "stick figure holding a silver bar",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_010.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_010.mp3"
+ },
+ {
+  "index": 11,
+  "chapter_title": "Limanda Ticaretin Nabz\u0131",
+  "mode": "overview",
+  "caption": "Pazar sahnesi",
+  "image_prompt": "stick figures exchanging goods",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_011.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_011.mp3"
+ },
+ {
+  "index": 12,
+  "chapter_title": "Limanda Ticaretin Nabz\u0131",
+  "mode": "overview",
+  "caption": "Ekonomik canlanma",
+  "image_prompt": "stick figure with rising graph arrows",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_012.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_012.mp3"
+ },
+ {
+  "index": 13,
+  "chapter_title": "Deniz Yolculu\u011fu Ba\u015fl\u0131yor",
+  "mode": "first_person",
+  "caption": "Geminin kalk\u0131\u015f\u0131",
+  "image_prompt": "stick figure on a ship deck with sails",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_013.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_013.mp3"
+ },
+ {
+  "index": 14,
+  "chapter_title": "Deniz Yolculu\u011fu Ba\u015fl\u0131yor",
+  "mode": "first_person",
+  "caption": "Y\u0131ld\u0131z navigasyonu",
+  "image_prompt": "stick figure looking at stars from ship",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_014.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_014.mp3"
+ },
+ {
+  "index": 15,
+  "chapter_title": "Deniz Yolculu\u011fu Ba\u015fl\u0131yor",
+  "mode": "first_person",
+  "caption": "Deniz yemekleri",
+  "image_prompt": "stick figure cooking on a fire aboard ship",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_015.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_015.mp3"
+ },
+ {
+  "index": 16,
+  "chapter_title": "Deniz Yolculu\u011fu Ba\u015fl\u0131yor",
+  "mode": "first_person",
+  "caption": "Uzak gemi",
+  "image_prompt": "stick figure pointing at another ship",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_016.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_016.mp3"
+ },
+ {
+  "index": 17,
+  "chapter_title": "Deniz Yolculu\u011fu Ba\u015fl\u0131yor",
+  "mode": "first_person",
+  "caption": "J\u00f3rv\u00edk liman\u0131",
+  "image_prompt": "stick figure arriving at a harbor with buildings",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_017.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_017.mp3"
+ },
+ {
+  "index": 18,
+  "chapter_title": "Deniz Yolculu\u011fu Ba\u015fl\u0131yor",
+  "mode": "first_person",
+  "caption": "Yeni planlar",
+  "image_prompt": "stick figure drawing a map on a table",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_018.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_018.mp3"
+ },
+ {
+  "index": 19,
+  "chapter_title": "\u015eehirde Ticaret ve Zanaat",
+  "mode": "overview",
+  "caption": "Metal i\u015f\u00e7ili\u011fi",
+  "image_prompt": "stick figure hammering metal on an anvil",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_019.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_019.mp3"
+ },
+ {
+  "index": 20,
+  "chapter_title": "\u015eehirde Ticaret ve Zanaat",
+  "mode": "overview",
+  "caption": "\u00c7e\u015fitli mallar",
+  "image_prompt": "stick figures with boxes labeled amber, tin, wine",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_020.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_020.mp3"
+ },
+ {
+  "index": 21,
+  "chapter_title": "\u015eehirde Ticaret ve Zanaat",
+  "mode": "overview",
+  "caption": "\u00c7ift\u00e7ilik ve bal\u0131k\u00e7\u0131l\u0131k",
+  "image_prompt": "stick figure with a plow and another with a fishing net",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_021.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_021.mp3"
+ },
+ {
+  "index": 22,
+  "chapter_title": "\u015eehirde Ticaret ve Zanaat",
+  "mode": "overview",
+  "caption": "Kaleler ve koruma",
+  "image_prompt": "stick figure near a small castle wall",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_022.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_022.mp3"
+ },
+ {
+  "index": 23,
+  "chapter_title": "\u015eehirde Ticaret ve Zanaat",
+  "mode": "overview",
+  "caption": "G\u00fcm\u00fc\u015f para",
+  "image_prompt": "stick figure weighing silver coins",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_023.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_023.mp3"
+ },
+ {
+  "index": 24,
+  "chapter_title": "\u015eehirde Ticaret ve Zanaat",
+  "mode": "overview",
+  "caption": "K\u00fclt\u00fcr kar\u0131\u015f\u0131m\u0131",
+  "image_prompt": "stick figure standing between a stone and a rune",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_024.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_024.mp3"
+ },
+ {
+  "index": 25,
+  "chapter_title": "Geri D\u00f6n\u00fc\u015f ve Ak\u015fam",
+  "mode": "first_person",
+  "caption": "Y\u00fckleme zaman\u0131",
+  "image_prompt": "stick figure loading crates onto a ship",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_025.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_025.mp3"
+ },
+ {
+  "index": 26,
+  "chapter_title": "Geri D\u00f6n\u00fc\u015f ve Ak\u015fam",
+  "mode": "first_person",
+  "caption": "\u015eark\u0131 s\u00f6yleme",
+  "image_prompt": "stick figures singing on a ship",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_026.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_026.mp3"
+ },
+ {
+  "index": 27,
+  "chapter_title": "Geri D\u00f6n\u00fc\u015f ve Ak\u015fam",
+  "mode": "first_person",
+  "caption": "F\u0131rt\u0131na sonras\u0131",
+  "image_prompt": "stick figure holding a rope in stormy sea",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_027.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_027.mp3"
+ },
+ {
+  "index": 28,
+  "chapter_title": "Geri D\u00f6n\u00fc\u015f ve Ak\u015fam",
+  "mode": "first_person",
+  "caption": "K\u00f6y kar\u015f\u0131lama",
+  "image_prompt": "stick figures greeting a ship arriving",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_028.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_028.mp3"
+ },
+ {
+  "index": 29,
+  "chapter_title": "Geri D\u00f6n\u00fc\u015f ve Ak\u015fam",
+  "mode": "first_person",
+  "caption": "Ak\u015fam yeme\u011fi",
+  "image_prompt": "stick figure serving fish at a table",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_029.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_029.mp3"
+ },
+ {
+  "index": 30,
+  "chapter_title": "Geri D\u00f6n\u00fc\u015f ve Ak\u015fam",
+  "mode": "first_person",
+  "caption": "Y\u0131ld\u0131zlar alt\u0131nda",
+  "image_prompt": "stick figure lying on ground looking at stars",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_030.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_030.mp3"
+ },
+ {
+  "index": 31,
+  "chapter_title": "Miras ve D\u00fc\u015f\u00fcnceler",
+  "mode": "overview",
+  "caption": "Ticaret el\u00e7ileri",
+  "image_prompt": "stick figure with a globe and arrows",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_031.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_031.mp3"
+ },
+ {
+  "index": 32,
+  "chapter_title": "Miras ve D\u00fc\u015f\u00fcnceler",
+  "mode": "overview",
+  "caption": "K\u00fcresel rotalar",
+  "image_prompt": "stick figure drawing lines across a map",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_032.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_032.mp3"
+ },
+ {
+  "index": 33,
+  "chapter_title": "Miras ve D\u00fc\u015f\u00fcnceler",
+  "mode": "overview",
+  "caption": "G\u00fcm\u00fc\u015f temeli",
+  "image_prompt": "stick figure with a balance scale and silver",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_033.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_033.mp3"
+ },
+ {
+  "index": 34,
+  "chapter_title": "Miras ve D\u00fc\u015f\u00fcnceler",
+  "mode": "overview",
+  "caption": "K\u00fclt\u00fcr al\u0131\u015fveri\u015fi",
+  "image_prompt": "stick figure exchanging a rune for a scroll",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_034.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_034.mp3"
+ },
+ {
+  "index": 35,
+  "chapter_title": "Miras ve D\u00fc\u015f\u00fcnceler",
+  "mode": "overview",
+  "caption": "K\u00fcresel miras",
+  "image_prompt": "stick figure standing on a globe",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_035.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_035.mp3"
+ },
+ {
+  "index": 36,
+  "chapter_title": "Miras ve D\u00fc\u015f\u00fcnceler",
+  "mode": "overview",
+  "caption": "Gelecek ke\u015fif",
+  "image_prompt": "stick figure looking forward with a telescope",
+  "image": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/images/img_036.png",
+  "audio": "episodes/ep007-a-day-in-the-life-of-a-viking-trader-in-/audio/aud_036.mp3"
+ }
+]

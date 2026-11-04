@@ -1,0 +1,225 @@
+{
+ "title": "Firavunlar\u0131n G\u00f6lgesinde: Antik M\u0131s\u0131r\u2019\u0131n G\u00fcnl\u00fck S\u0131rlar\u0131",
+ "description": "Antik M\u0131s\u0131r\u2019\u0131n s\u0131radan insanlar\u0131n\u0131n ya\u015fam\u0131na dair bir ke\u015fif. Kaynaklar: https://en.wikipedia.org/wiki/Ancient_Egyptian_religion, https://en.wikipedia.org/wiki/Ancient_Egyptian_deities, https://en.wikipedia.org/wiki/Hatshepsut, https://en.wikipedia.org/wiki/Egypt",
+ "hashtags": [
+  "#history"
+ ],
+ "chapters": [
+  {
+   "chapter_title": "Sabah\u0131n \u0130lk I\u015f\u0131\u011f\u0131",
+   "mode": "first_person",
+   "beats": [
+    {
+     "narration": "G\u00fcne\u015f ufuktan y\u00fckselirken, ben de Nil k\u0131y\u0131s\u0131nda uyan\u0131yorum. \u00c7evremdeki suyun yumu\u015fak sesi, yeni bir g\u00fcn\u00fcn habercisi.",
+     "caption": "Sabah uyan\u0131\u015f\u0131",
+     "image_prompt": "stick figure sitting up in a simple bed beside a wavy line representing water"
+    },
+    {
+     "narration": "Kahvalt\u0131 masamda ekmek, bal ve taze hurma var. Bu yiyecekler, tanr\u0131lara sunulan ilk adettir; bir lokma bile kutsal bir ba\u011f kurar.",
+     "caption": "Kahvalt\u0131 sunumu",
+     "image_prompt": "stick figure holding a loaf of bread and a bowl of honey near a small altar"
+    },
+    {
+     "narration": "\u0130lk i\u015fim, evimin \u00f6n\u00fcndeki k\u00fc\u00e7\u00fck tap\u0131na\u011fa bir dua b\u0131rakmak. Her evde tanr\u0131n\u0131n bir k\u00f6\u015fesi vard\u0131r, burada ben de bir sunak kurar\u0131m.",
+     "caption": "Ev tap\u0131na\u011f\u0131",
+     "image_prompt": "stick figure placing a small offering on a tiny shrine"
+    },
+    {
+     "narration": "G\u00fcnl\u00fck i\u015fleri aras\u0131nda tarlaya gitmek var. Toprak, Osiris\u2019in bereketine ba\u011fl\u0131; ekin ekmek, onun l\u00fctfunu istemektir.",
+     "caption": "Tarlada \u00e7al\u0131\u015fmak",
+     "image_prompt": "stick figure holding a hoe standing in a field"
+    },
+    {
+     "narration": "\u00d6\u011fle vakti, i\u015f\u00e7iler nehir kenar\u0131nda dinlenir, suyun serinli\u011fini hisseder. Bu an, ya\u015fam ve \u00f6l\u00fcm d\u00f6ng\u00fcs\u00fcn\u00fcn bir yans\u0131mas\u0131d\u0131r.",
+     "caption": "Nehrin kenar\u0131",
+     "image_prompt": "stick figure sitting on a rock near a wavy line"
+    },
+    {
+     "narration": "G\u00fcne\u015f batarken, ailemle birlikte ak\u015fam yeme\u011fi yeriz; g\u00fcn\u00fcn \u015f\u00fckran\u0131n\u0131 sunar, tanr\u0131lara te\u015fekk\u00fcr ederiz.",
+     "caption": "Ak\u015fam \u015f\u00fckran\u0131",
+     "image_prompt": "stick figure family gathered around a simple table"
+    }
+   ]
+  },
+  {
+   "chapter_title": "M\u0131s\u0131r\u2019\u0131n Tanr\u0131sal Dokusu",
+   "mode": "overview",
+   "beats": [
+    {
+     "narration": "Antik M\u0131s\u0131r\u2019da tanr\u0131lar, do\u011fa olaylar\u0131ndan hayvan formlar\u0131na kadar geni\u015f bir yelpazede temsil edilirdi. Yakla\u015f\u0131k 1.500 tanr\u0131 ismi bilinir.",
+     "caption": "Zengin panteon",
+     "image_prompt": "stick figure with multiple small symbols representing different gods"
+    },
+    {
+     "narration": "Her tanr\u0131, belirli bir g\u00fc\u00e7 ya da kavram\u0131 y\u00f6netirdi; \u00f6rne\u011fin Ra g\u00fcne\u015fi, Isis do\u011furganl\u0131\u011f\u0131 temsil ederdi.",
+     "caption": "G\u00fcne\u015f ve do\u011furganl\u0131k",
+     "image_prompt": "stick figure with a sun above and a stylized mother figure"
+    },
+    {
+     "narration": "Tanr\u0131lar\u0131n varl\u0131\u011f\u0131, hem resmi tap\u0131nak rit\u00fcellerinde hem de ki\u015fisel ev ibadetlerinde hissedilirdi. Bu iki katman, inanc\u0131n toplumsal dokusunu olu\u015ftururdu.",
+     "caption": "\u0130ki katmanl\u0131 ibadet",
+     "image_prompt": "stick figure in front of a large temple and another in a small home shrine"
+    },
+    {
+     "narration": "Firavun, tanr\u0131larla arac\u0131 olarak g\u00f6r\u00fcl\u00fcr, onlara sunulan rit\u00fcellerin ba\u015f\u0131yd\u0131. Bu, kozmik d\u00fczeni korumak i\u00e7in kritik bir g\u00f6revdi.",
+     "caption": "Firavun arac\u0131",
+     "image_prompt": "stick figure wearing a crown standing between two larger deity symbols"
+    },
+    {
+     "narration": "Zamanla, halk\u0131n bireysel dualar\u0131 ve b\u00fcy\u00fcs\u00fc, devletin resmi t\u00f6renlerinden ayr\u0131 bir gelenek haline geldi. Bu, dinin halk i\u00e7inde yayg\u0131nla\u015fmas\u0131n\u0131 sa\u011flad\u0131.",
+     "caption": "Bireysel b\u00fcy\u00fc",
+     "image_prompt": "stick figure holding a wand and speaking to a small spirit"
+    },
+    {
+     "narration": "M\u0131s\u0131r\u2019\u0131n din\u00ee sistemi, 3.500 y\u0131l boyunca evrim ge\u00e7irdi; bir d\u00f6nem Akhenaten\u2019in tek tanr\u0131l\u0131 Aten inanc\u0131 bile ortaya \u00e7\u0131kt\u0131.",
+     "caption": "Aten d\u00f6nemi",
+     "image_prompt": "stick figure with a single sun disk above"
+    }
+   ]
+  },
+  {
+   "chapter_title": "Evdeki K\u00fc\u00e7\u00fck Tap\u0131nak",
+   "mode": "first_person",
+   "beats": [
+    {
+     "narration": "Evimdeki k\u00f6\u015fe, bir mini tap\u0131na\u011fa d\u00f6n\u00fc\u015fm\u00fc\u015f. Burada bir \u00e7\u00f6mlek ve bir \u00e7i\u00e7ek sunar\u0131m, tanr\u0131lar\u0131n kula\u011f\u0131na ula\u015fmak i\u00e7in.",
+     "caption": "Mini tap\u0131nak",
+     "image_prompt": "stick figure placing a pot and flower on a small altar"
+    },
+    {
+     "narration": "Sabah dualar\u0131mda, ya\u015fam suyunu sa\u011flayan Hapi\u2019ye \u015f\u00fckrederim. Bu su, Nil\u2019in ta\u015fk\u0131nlar\u0131ndan gelir ve bereket getirir.",
+     "caption": "Hapi\u2019ye \u015f\u00fck\u00fcr",
+     "image_prompt": "stick figure raising hands toward a wave symbol"
+    },
+    {
+     "narration": "Ak\u015famlar\u0131, \u00f6l\u00fclerin ruhunu koruyan Anubis\u2019e bir kurban verir, \u00f6b\u00fcr d\u00fcnyada g\u00fcvenli yol isterim.",
+     "caption": "Anubis\u2019e kurban",
+     "image_prompt": "stick figure offering a small animal to a jackal silhouette"
+    },
+    {
+     "narration": "\u00c7ocuklar, oyun oynarken bile tanr\u0131lar\u0131 \u00e7a\u011f\u0131r\u0131r; bir top at\u0131\u015f\u0131 bile bir rit\u00fcel gibi alg\u0131lan\u0131r.",
+     "caption": "Oyun ve rit\u00fcel",
+     "image_prompt": "stick figure child throwing a ball with a tiny deity hovering"
+    },
+    {
+     "narration": "Bazen, hastal\u0131k geldi\u011finde, ben ve kom\u015fular\u0131m\u0131z, \u0130sis\u2019e \u015fifa dilemek i\u00e7in ortak bir dua okuruz.",
+     "caption": "\u0130sis\u2019e \u015fifa",
+     "image_prompt": "stick figures gathered, hands raised toward a mother goddess symbol"
+    },
+    {
+     "narration": "G\u00fcn biterken, ay \u0131\u015f\u0131\u011f\u0131 alt\u0131nda, evin kap\u0131s\u0131n\u0131 kapat\u0131r ve tanr\u0131lara te\u015fekk\u00fcr ederim; bu, huzurlu bir uykuya davettir.",
+     "caption": "Gece te\u015fekk\u00fcr",
+     "image_prompt": "stick figure closing a door under a crescent moon"
+    }
+   ]
+  },
+  {
+   "chapter_title": "Tanr\u0131lar\u0131n Toplumsal Rol\u00fc",
+   "mode": "overview",
+   "beats": [
+    {
+     "narration": "M\u0131s\u0131r\u2019da tanr\u0131lar, sadece do\u011fa olaylar\u0131n\u0131 a\u00e7\u0131klamakla kalmaz, ayn\u0131 zamanda toplumsal d\u00fczeni de \u015fekillendirirdi.",
+     "caption": "Toplumsal d\u00fczen",
+     "image_prompt": "stick figure with scales balancing symbols of gods and people"
+    },
+    {
+     "narration": "Her b\u00f6lge, kendi koruyucu tanr\u0131s\u0131na sahipti; birle\u015fmelerde bu tanr\u0131lar ya b\u00fct\u00fcnle\u015fir ya da yer de\u011fi\u015ftirirdi.",
+     "caption": "B\u00f6lgesel tanr\u0131lar",
+     "image_prompt": "stick figure with two small deity icons merging into one"
+    },
+    {
+     "narration": "Kutsal metinler, firavunun tanr\u0131larla olan ba\u011f\u0131n\u0131 vurgular; bu, halk\u0131n da ayn\u0131 ba\u011fa eri\u015febilmesi i\u00e7in \u00f6rnek olurdu.",
+     "caption": "Firavun \u00f6rnekli\u011fi",
+     "image_prompt": "stick figure king holding a scepter beside a deity statue"
+    },
+    {
+     "narration": "M\u0131s\u0131r\u2019\u0131n erken din\u00ee yap\u0131s\u0131, hayvan \u015fekilli tanr\u0131larla ba\u015flad\u0131; zamanla insan formunda tanr\u0131lar da ortaya \u00e7\u0131kt\u0131.",
+     "caption": "Hayvan\u2011insan tanr\u0131lar",
+     "image_prompt": "stick figure with a falcon head and another with a human head"
+    },
+    {
+     "narration": "M\u0131s\u0131r\u2019\u0131n dini, Do\u011fu Afrika k\u00fclt\u00fcrleriyle ortak k\u00f6kler ta\u015f\u0131d\u0131\u011f\u0131 i\u00e7in, sadece Akdeniz medeniyetlerinden ayr\u0131 bir kimlikti.",
+     "caption": "Afrika k\u00f6kleri",
+     "image_prompt": "stick figure with a map outline of Africa and Egypt highlighted"
+    },
+    {
+     "narration": "Bu karma\u015f\u0131k panteon, binlerce tanr\u0131y\u0131 bar\u0131nd\u0131rsa da, halk\u0131n g\u00fcnl\u00fck ya\u015fam\u0131nda en \u00e7ok iki ya da \u00fc\u00e7 tanr\u0131 \u00f6n plandayd\u0131.",
+     "caption": "G\u00fcnl\u00fck tanr\u0131lar",
+     "image_prompt": "stick figure with three small deity icons above"
+    }
+   ]
+  },
+  {
+   "chapter_title": "M\u0131s\u0131r\u2019\u0131n Kad\u0131n H\u00fck\u00fcmdar\u0131: Hatshepsut",
+   "mode": "first_person",
+   "beats": [
+    {
+     "narration": "Ben Hatshepsut\u2019un saray\u0131nda bir hizmet\u00e7iyim; krali\u00e7e, kendini erkek firavun gibi g\u00f6steriyor, ta\u00e7 tak\u0131yor.",
+     "caption": "Krali\u00e7e firavun",
+     "image_prompt": "stick figure wearing a crown and a male robe"
+    },
+    {
+     "narration": "Onun d\u00f6neminde bar\u0131\u015f ve refah h\u00e2kim; ticaret gemileri Punt\u2019a gidip, koku ve a\u011fa\u00e7lar getiriyor.",
+     "caption": "Punt seferi",
+     "image_prompt": "stick figure on a boat with cargo boxes"
+    },
+    {
+     "narration": "Hatshepsut, b\u00fcy\u00fck tap\u0131naklar in\u015fa ettiriyor; Karnak\u2019\u0131n yeni b\u00f6l\u00fcmleri onun ad\u0131yla an\u0131l\u0131yor.",
+     "caption": "Yeni tap\u0131naklar",
+     "image_prompt": "stick figure with a hammer building a simple temple"
+    },
+    {
+     "narration": "Onun \u00f6l\u00fcm\u00fcnden sonra, baz\u0131 rahipler onun an\u0131s\u0131n\u0131 silmeye \u00e7al\u0131\u015f\u0131yor; heykelleri k\u0131r\u0131l\u0131yor, isimleri siliniyor.",
+     "caption": "An\u0131 silme \u00e7abas\u0131",
+     "image_prompt": "stick figure chiseling a statue"
+    },
+    {
+     "narration": "Ama halk h\u00e2l\u00e2 onun getirdi\u011fi bollu\u011fu hat\u0131rl\u0131yor; pazarlarda onun ad\u0131 h\u00e2l\u00e2 f\u0131s\u0131ldan\u0131yor.",
+     "caption": "Halk\u0131n hat\u0131ras\u0131",
+     "image_prompt": "stick figure whispering to another in a market"
+    },
+    {
+     "narration": "Ben, onun miras\u0131n\u0131 g\u00f6rmek i\u00e7in tap\u0131na\u011fa gidiyorum; her s\u00fctun, onun cesaretinin bir yans\u0131mas\u0131.",
+     "caption": "Miras\u0131n izleri",
+     "image_prompt": "stick figure standing before tall columns"
+    }
+   ]
+  },
+  {
+   "chapter_title": "G\u00fcn\u00fcm\u00fczle Ba\u011flant\u0131",
+   "mode": "overview",
+   "beats": [
+    {
+     "narration": "M\u0131s\u0131r\u2019\u0131n g\u00fcnl\u00fck ya\u015fam\u0131, tanr\u0131larla i\u00e7 i\u00e7e ge\u00e7mi\u015f bir rit\u00fcel a\u011f\u0131yd\u0131; bu, modern d\u00fcnyada bile izlerini ta\u015f\u0131yor.",
+     "caption": "Rit\u00fcelin miras\u0131",
+     "image_prompt": "stick figure with a modern city skyline and ancient symbols"
+    },
+    {
+     "narration": "Bug\u00fcn, M\u0131s\u0131r\u2019da h\u00e2l\u00e2 bir\u00e7ok ki\u015fi eski inan\u00e7lar\u0131n izlerini, \u00f6zellikle koruyucu ruhlar\u0131n hat\u0131ralar\u0131n\u0131 ya\u015fat\u0131r.",
+     "caption": "Eski inan\u00e7lar",
+     "image_prompt": "stick figure lighting a candle near a small shrine"
+    },
+    {
+     "narration": "Antik tap\u0131naklar, turistlerin ilgisini \u00e7eker; fakat orijinal ama\u00e7lar\u0131, toplumu birle\u015ftiren kutsal mekanlard\u0131.",
+     "caption": "Tap\u0131nak turizmi",
+     "image_prompt": "stick figure with a camera pointing at a temple"
+    },
+    {
+     "narration": "M\u0131s\u0131r\u2019\u0131n ad\u0131, \u2018kara toprak\u2019 anlam\u0131na gelir; bu toprak, binlerce y\u0131l s\u00fcren bir medeniyetin temelini att\u0131.",
+     "caption": "Kara toprak",
+     "image_prompt": "stick figure standing on a dark soil patch"
+    },
+    {
+     "narration": "Ge\u00e7mi\u015fteki tanr\u0131lar, bug\u00fcn de insan\u0131n do\u011fa ve ya\u015famla kurdu\u011fu ba\u011f\u0131n bir sembol\u00fcd\u00fcr; bu ba\u011f, zamanla de\u011fi\u015fse de kaybolmaz.",
+     "caption": "Sonsuz ba\u011f",
+     "image_prompt": "stick figure holding a rope that connects to a sun and a river"
+    },
+    {
+     "narration": "Belki bir sonraki sabah, Nil\u2019in kenar\u0131nda otururken, ayn\u0131 tanr\u0131lara selam g\u00f6nderiyorsunuz; tarih, sessiz bir f\u0131s\u0131lt\u0131 gibi yan\u0131n\u0131zda.",
+     "caption": "Ge\u00e7mi\u015fin f\u0131s\u0131lt\u0131s\u0131",
+     "image_prompt": "stick figure sitting by a wavy line, looking up at a small sun"
+    }
+   ]
+  }
+ ]
+}

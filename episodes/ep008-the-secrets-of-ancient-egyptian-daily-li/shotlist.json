@@ -1,0 +1,326 @@
+[
+ {
+  "index": 1,
+  "chapter_title": "Sabah\u0131n \u0130lk I\u015f\u0131\u011f\u0131",
+  "mode": "first_person",
+  "caption": "Sabah uyan\u0131\u015f\u0131",
+  "image_prompt": "stick figure sitting up in a simple bed beside a wavy line representing water",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_001.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_001.mp3"
+ },
+ {
+  "index": 2,
+  "chapter_title": "Sabah\u0131n \u0130lk I\u015f\u0131\u011f\u0131",
+  "mode": "first_person",
+  "caption": "Kahvalt\u0131 sunumu",
+  "image_prompt": "stick figure holding a loaf of bread and a bowl of honey near a small altar",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_002.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_002.mp3"
+ },
+ {
+  "index": 3,
+  "chapter_title": "Sabah\u0131n \u0130lk I\u015f\u0131\u011f\u0131",
+  "mode": "first_person",
+  "caption": "Ev tap\u0131na\u011f\u0131",
+  "image_prompt": "stick figure placing a small offering on a tiny shrine",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_003.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_003.mp3"
+ },
+ {
+  "index": 4,
+  "chapter_title": "Sabah\u0131n \u0130lk I\u015f\u0131\u011f\u0131",
+  "mode": "first_person",
+  "caption": "Tarlada \u00e7al\u0131\u015fmak",
+  "image_prompt": "stick figure holding a hoe standing in a field",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_004.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_004.mp3"
+ },
+ {
+  "index": 5,
+  "chapter_title": "Sabah\u0131n \u0130lk I\u015f\u0131\u011f\u0131",
+  "mode": "first_person",
+  "caption": "Nehrin kenar\u0131",
+  "image_prompt": "stick figure sitting on a rock near a wavy line",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_005.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_005.mp3"
+ },
+ {
+  "index": 6,
+  "chapter_title": "Sabah\u0131n \u0130lk I\u015f\u0131\u011f\u0131",
+  "mode": "first_person",
+  "caption": "Ak\u015fam \u015f\u00fckran\u0131",
+  "image_prompt": "stick figure family gathered around a simple table",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_006.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_006.mp3"
+ },
+ {
+  "index": 7,
+  "chapter_title": "M\u0131s\u0131r\u2019\u0131n Tanr\u0131sal Dokusu",
+  "mode": "overview",
+  "caption": "Zengin panteon",
+  "image_prompt": "stick figure with multiple small symbols representing different gods",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_007.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_007.mp3"
+ },
+ {
+  "index": 8,
+  "chapter_title": "M\u0131s\u0131r\u2019\u0131n Tanr\u0131sal Dokusu",
+  "mode": "overview",
+  "caption": "G\u00fcne\u015f ve do\u011furganl\u0131k",
+  "image_prompt": "stick figure with a sun above and a stylized mother figure",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_008.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_008.mp3"
+ },
+ {
+  "index": 9,
+  "chapter_title": "M\u0131s\u0131r\u2019\u0131n Tanr\u0131sal Dokusu",
+  "mode": "overview",
+  "caption": "\u0130ki katmanl\u0131 ibadet",
+  "image_prompt": "stick figure in front of a large temple and another in a small home shrine",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_009.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_009.mp3"
+ },
+ {
+  "index": 10,
+  "chapter_title": "M\u0131s\u0131r\u2019\u0131n Tanr\u0131sal Dokusu",
+  "mode": "overview",
+  "caption": "Firavun arac\u0131",
+  "image_prompt": "stick figure wearing a crown standing between two larger deity symbols",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_010.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_010.mp3"
+ },
+ {
+  "index": 11,
+  "chapter_title": "M\u0131s\u0131r\u2019\u0131n Tanr\u0131sal Dokusu",
+  "mode": "overview",
+  "caption": "Bireysel b\u00fcy\u00fc",
+  "image_prompt": "stick figure holding a wand and speaking to a small spirit",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_011.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_011.mp3"
+ },
+ {
+  "index": 12,
+  "chapter_title": "M\u0131s\u0131r\u2019\u0131n Tanr\u0131sal Dokusu",
+  "mode": "overview",
+  "caption": "Aten d\u00f6nemi",
+  "image_prompt": "stick figure with a single sun disk above",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_012.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_012.mp3"
+ },
+ {
+  "index": 13,
+  "chapter_title": "Evdeki K\u00fc\u00e7\u00fck Tap\u0131nak",
+  "mode": "first_person",
+  "caption": "Mini tap\u0131nak",
+  "image_prompt": "stick figure placing a pot and flower on a small altar",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_013.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_013.mp3"
+ },
+ {
+  "index": 14,
+  "chapter_title": "Evdeki K\u00fc\u00e7\u00fck Tap\u0131nak",
+  "mode": "first_person",
+  "caption": "Hapi\u2019ye \u015f\u00fck\u00fcr",
+  "image_prompt": "stick figure raising hands toward a wave symbol",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_014.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_014.mp3"
+ },
+ {
+  "index": 15,
+  "chapter_title": "Evdeki K\u00fc\u00e7\u00fck Tap\u0131nak",
+  "mode": "first_person",
+  "caption": "Anubis\u2019e kurban",
+  "image_prompt": "stick figure offering a small animal to a jackal silhouette",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_015.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_015.mp3"
+ },
+ {
+  "index": 16,
+  "chapter_title": "Evdeki K\u00fc\u00e7\u00fck Tap\u0131nak",
+  "mode": "first_person",
+  "caption": "Oyun ve rit\u00fcel",
+  "image_prompt": "stick figure child throwing a ball with a tiny deity hovering",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_016.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_016.mp3"
+ },
+ {
+  "index": 17,
+  "chapter_title": "Evdeki K\u00fc\u00e7\u00fck Tap\u0131nak",
+  "mode": "first_person",
+  "caption": "\u0130sis\u2019e \u015fifa",
+  "image_prompt": "stick figures gathered, hands raised toward a mother goddess symbol",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_017.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_017.mp3"
+ },
+ {
+  "index": 18,
+  "chapter_title": "Evdeki K\u00fc\u00e7\u00fck Tap\u0131nak",
+  "mode": "first_person",
+  "caption": "Gece te\u015fekk\u00fcr",
+  "image_prompt": "stick figure closing a door under a crescent moon",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_018.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_018.mp3"
+ },
+ {
+  "index": 19,
+  "chapter_title": "Tanr\u0131lar\u0131n Toplumsal Rol\u00fc",
+  "mode": "overview",
+  "caption": "Toplumsal d\u00fczen",
+  "image_prompt": "stick figure with scales balancing symbols of gods and people",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_019.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_019.mp3"
+ },
+ {
+  "index": 20,
+  "chapter_title": "Tanr\u0131lar\u0131n Toplumsal Rol\u00fc",
+  "mode": "overview",
+  "caption": "B\u00f6lgesel tanr\u0131lar",
+  "image_prompt": "stick figure with two small deity icons merging into one",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_020.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_020.mp3"
+ },
+ {
+  "index": 21,
+  "chapter_title": "Tanr\u0131lar\u0131n Toplumsal Rol\u00fc",
+  "mode": "overview",
+  "caption": "Firavun \u00f6rnekli\u011fi",
+  "image_prompt": "stick figure king holding a scepter beside a deity statue",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_021.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_021.mp3"
+ },
+ {
+  "index": 22,
+  "chapter_title": "Tanr\u0131lar\u0131n Toplumsal Rol\u00fc",
+  "mode": "overview",
+  "caption": "Hayvan\u2011insan tanr\u0131lar",
+  "image_prompt": "stick figure with a falcon head and another with a human head",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_022.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_022.mp3"
+ },
+ {
+  "index": 23,
+  "chapter_title": "Tanr\u0131lar\u0131n Toplumsal Rol\u00fc",
+  "mode": "overview",
+  "caption": "Afrika k\u00f6kleri",
+  "image_prompt": "stick figure with a map outline of Africa and Egypt highlighted",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_023.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_023.mp3"
+ },
+ {
+  "index": 24,
+  "chapter_title": "Tanr\u0131lar\u0131n Toplumsal Rol\u00fc",
+  "mode": "overview",
+  "caption": "G\u00fcnl\u00fck tanr\u0131lar",
+  "image_prompt": "stick figure with three small deity icons above",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_024.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_024.mp3"
+ },
+ {
+  "index": 25,
+  "chapter_title": "M\u0131s\u0131r\u2019\u0131n Kad\u0131n H\u00fck\u00fcmdar\u0131: Hatshepsut",
+  "mode": "first_person",
+  "caption": "Krali\u00e7e firavun",
+  "image_prompt": "stick figure wearing a crown and a male robe",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_025.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_025.mp3"
+ },
+ {
+  "index": 26,
+  "chapter_title": "M\u0131s\u0131r\u2019\u0131n Kad\u0131n H\u00fck\u00fcmdar\u0131: Hatshepsut",
+  "mode": "first_person",
+  "caption": "Punt seferi",
+  "image_prompt": "stick figure on a boat with cargo boxes",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_026.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_026.mp3"
+ },
+ {
+  "index": 27,
+  "chapter_title": "M\u0131s\u0131r\u2019\u0131n Kad\u0131n H\u00fck\u00fcmdar\u0131: Hatshepsut",
+  "mode": "first_person",
+  "caption": "Yeni tap\u0131naklar",
+  "image_prompt": "stick figure with a hammer building a simple temple",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_027.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_027.mp3"
+ },
+ {
+  "index": 28,
+  "chapter_title": "M\u0131s\u0131r\u2019\u0131n Kad\u0131n H\u00fck\u00fcmdar\u0131: Hatshepsut",
+  "mode": "first_person",
+  "caption": "An\u0131 silme \u00e7abas\u0131",
+  "image_prompt": "stick figure chiseling a statue",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_028.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_028.mp3"
+ },
+ {
+  "index": 29,
+  "chapter_title": "M\u0131s\u0131r\u2019\u0131n Kad\u0131n H\u00fck\u00fcmdar\u0131: Hatshepsut",
+  "mode": "first_person",
+  "caption": "Halk\u0131n hat\u0131ras\u0131",
+  "image_prompt": "stick figure whispering to another in a market",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_029.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_029.mp3"
+ },
+ {
+  "index": 30,
+  "chapter_title": "M\u0131s\u0131r\u2019\u0131n Kad\u0131n H\u00fck\u00fcmdar\u0131: Hatshepsut",
+  "mode": "first_person",
+  "caption": "Miras\u0131n izleri",
+  "image_prompt": "stick figure standing before tall columns",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_030.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_030.mp3"
+ },
+ {
+  "index": 31,
+  "chapter_title": "G\u00fcn\u00fcm\u00fczle Ba\u011flant\u0131",
+  "mode": "overview",
+  "caption": "Rit\u00fcelin miras\u0131",
+  "image_prompt": "stick figure with a modern city skyline and ancient symbols",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_031.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_031.mp3"
+ },
+ {
+  "index": 32,
+  "chapter_title": "G\u00fcn\u00fcm\u00fczle Ba\u011flant\u0131",
+  "mode": "overview",
+  "caption": "Eski inan\u00e7lar",
+  "image_prompt": "stick figure lighting a candle near a small shrine",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_032.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_032.mp3"
+ },
+ {
+  "index": 33,
+  "chapter_title": "G\u00fcn\u00fcm\u00fczle Ba\u011flant\u0131",
+  "mode": "overview",
+  "caption": "Tap\u0131nak turizmi",
+  "image_prompt": "stick figure with a camera pointing at a temple",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_033.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_033.mp3"
+ },
+ {
+  "index": 34,
+  "chapter_title": "G\u00fcn\u00fcm\u00fczle Ba\u011flant\u0131",
+  "mode": "overview",
+  "caption": "Kara toprak",
+  "image_prompt": "stick figure standing on a dark soil patch",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_034.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_034.mp3"
+ },
+ {
+  "index": 35,
+  "chapter_title": "G\u00fcn\u00fcm\u00fczle Ba\u011flant\u0131",
+  "mode": "overview",
+  "caption": "Sonsuz ba\u011f",
+  "image_prompt": "stick figure holding a rope that connects to a sun and a river",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_035.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_035.mp3"
+ },
+ {
+  "index": 36,
+  "chapter_title": "G\u00fcn\u00fcm\u00fczle Ba\u011flant\u0131",
+  "mode": "overview",
+  "caption": "Ge\u00e7mi\u015fin f\u0131s\u0131lt\u0131s\u0131",
+  "image_prompt": "stick figure sitting by a wavy line, looking up at a small sun",
+  "image": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/images/img_036.png",
+  "audio": "episodes/ep008-the-secrets-of-ancient-egyptian-daily-li/audio/aud_036.mp3"
+ }
+]

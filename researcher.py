@@ -19,6 +19,9 @@ SEARCH_API = "https://en.wikipedia.org/w/api.php?action=query&list=search&format
 EXTRACT_API = "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=1&format=json&titles={title}"
 LOC_SEARCH_API = "https://www.loc.gov/search/?q={q}&fo=json&c={limit}"
 LOC_MAX_ITEMS = 4
+CROSSREF_SEARCH_API = ("https://api.crossref.org/works?query.bibliographic={q}"
+                       "&rows={limit}&select=DOI,title,publisher,published,issued,author,abstract,URL")
+CROSSREF_MAX_ITEMS = 3
 
 
 def http_json(url, tries=3):
@@ -125,6 +128,65 @@ def search_loc_records(topic, limit=LOC_MAX_ITEMS):
     payload = http_json(url)
     return parse_loc_results(payload, limit=limit)
 
+
+def parse_crossref_results(payload, limit=CROSSREF_MAX_ITEMS):
+    """Parse Crossref scholarly metadata; abstracts remain attributed leads, not primary proof."""
+    message = payload.get("message") or {}
+    sources = []
+    for item in (message.get("items") or [])[:limit]:
+        if not isinstance(item, dict):
+            continue
+        title = _field_text(item.get("title"))
+        if not title:
+            continue
+        doi = _field_text(item.get("DOI"))
+        url = _field_text(item.get("URL")) or (f"https://doi.org/{doi}" if doi else "")
+        if not url:
+            continue
+        authors = []
+        for author in item.get("author") or []:
+            if not isinstance(author, dict):
+                continue
+            name = " ".join(x for x in [
+                str(author.get("given") or "").strip(),
+                str(author.get("family") or "").strip()
+            ] if x)
+            if name:
+                authors.append(name)
+        date_obj = item.get("published") or item.get("issued") or {}
+        parts = (date_obj.get("date-parts") or [[]]) if isinstance(date_obj, dict) else [[]]
+        year = str(parts[0][0]) if parts and parts[0] else ""
+        abstract = item.get("abstract") or ""
+        abstract = clean(re.sub(r"<[^>]+>", " ", str(abstract)))
+        publisher = _field_text(item.get("publisher"))
+        record = [
+            f"Crossref scholarly record: {title}",
+            f"Authors: {', '.join(authors[:8])}" if authors else "",
+            f"Year: {year}" if year else "",
+            f"Publisher: {publisher}" if publisher else "",
+            f"DOI: {doi}" if doi else "",
+            f"Publisher-supplied abstract: {abstract[:2500]}" if abstract else "",
+        ]
+        sources.append({
+            "title": title,
+            "url": url,
+            "text": "\\n".join(x for x in record if x)[:WIKI_EXTRACT_CHARS],
+            "source_type": "Crossref scholarly metadata",
+            "evidence_level": "publisher-supplied bibliographic metadata/abstract; corroborate with primary sources",
+            "date": year or None,
+            "creator": ", ".join(authors[:8]) or None,
+            "doi": doi or None,
+            "rights": "abstract rights remain with the publisher; use as attributed research context",
+        })
+    return sources
+
+
+def search_crossref_records(topic, limit=CROSSREF_MAX_ITEMS):
+    """Search Crossref's public REST API; no API key is required."""
+    q = urllib.parse.quote(topic)
+    url = CROSSREF_SEARCH_API.format(q=q, limit=int(limit))
+    return parse_crossref_results(http_json(url), limit=limit)
+
 def build_digest(topic):
     """Search multiple free catalogs; never turn metadata into invented facts."""
     print(f"[research] topic: {topic}")
@@ -163,13 +225,21 @@ def build_digest(topic):
     except Exception as e:
         print(f"[research] Library of Congress search unavailable: {e}")
 
+    try:
+        scholarly = search_crossref_records(topic)
+        sources.extend(scholarly)
+        for source in scholarly:
+            print(f"[research] + Crossref: {source['title']}")
+    except Exception as e:
+        print(f"[research] Crossref search unavailable: {e}")
+
     if not sources:
         raise RuntimeError(f"research: no usable sources found for '{topic}'")
     digest = {
         "topic": topic,
         "generated_at": int(time.time()),
         "source_count": len(sources),
-        "rule": "The narrator may ONLY state facts present in source texts. LOC catalog descriptions are metadata and corroboration, not proof of every detail. If sources disagree or are silent, say so.",
+        "rule": "The narrator may ONLY state facts present in source texts. LOC catalog descriptions are metadata and corroboration, not proof of every detail. Crossref metadata/abstracts are attributed scholarly leads, not primary evidence; verify important claims against primary sources. If sources disagree or are silent, say so.",
         "sources": sources,
     }
     return digest

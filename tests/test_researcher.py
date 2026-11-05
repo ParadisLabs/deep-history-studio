@@ -68,7 +68,7 @@ class CrossrefParsing(unittest.TestCase):
         self.assertIn("2021", rows[0]["text"])
         self.assertIn("Examines port records", rows[0]["text"])
         self.assertEqual(rows[0]["doi"], "10.1234/example.1")
-        self.assertIn("primary evidence", rows[0]["evidence_level"])
+        self.assertIn("primary sources", rows[0]["evidence_level"])
 
     def test_skips_records_without_title_or_resolvable_url(self):
         payload = {"message": {"items": [

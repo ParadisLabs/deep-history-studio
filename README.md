@@ -40,3 +40,7 @@ The researcher combines Wikipedia article extracts with free Library of Congress
 ## Research APIs
 
 Research digests combine Wikipedia article extracts with the free Library of Congress JSON catalog and Crossref's public scholarly metadata API. Neither connector requires a paid plan or API key. LOC records are catalog metadata; Crossref records may include publisher-supplied abstracts and DOI links. Both are labelled by source type and evidence level. Treat them as corroborating leads, verify major claims against primary sources, and preserve attribution/rights notes. Crossref abstracts remain subject to publisher rights.
+
+## Shared image quota
+
+Cloudflare image calls are admitted through OpsHub's signed `/ai-usage/reserve` endpoint. The shared UTC-day limits are 24 calls total and 10 per studio. This counts requests, not neurons, and cannot account for other Cloudflare workloads. If the ledger is missing, unavailable, or at its cap, the studio skips Cloudflare and uses its keyless Pollinations fallback. Existing `HUB_URL` and `HUB_WEBHOOK_SECRET` Actions secrets are required; no new secret is introduced. Deploy the OpsHub upgrade before merging/enabling this studio change.

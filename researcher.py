@@ -170,7 +170,7 @@ def parse_crossref_results(payload, limit=CROSSREF_MAX_ITEMS):
         sources.append({
             "title": title,
             "url": url,
-            "text": "\\n".join(x for x in record if x)[:WIKI_EXTRACT_CHARS],
+            "text": "\n".join(x for x in record if x)[:WIKI_EXTRACT_CHARS],
             "source_type": "Crossref scholarly metadata",
             "evidence_level": "publisher-supplied bibliographic metadata/abstract; corroborate with primary sources",
             "date": year or None,

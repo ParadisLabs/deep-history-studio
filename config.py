@@ -48,7 +48,7 @@ CAPTION_FONTSIZE = 34
 WIDTH, HEIGHT = 1080, 1920      # vertical 9:16 for TikTok/YouTube Shorts optimal engagement
 FPS = 30
 KEN_BURNS = True                # slow zoom/pan on every image
-VIDEO_BITRATE = "900k"          # keeps 6-10 min under Telegram's 50MB
+VIDEO_BITRATE = "700k"          # ceiling; renderer may lower this for long videos
 AUDIO_BITRATE = "96k"
 
 # ---------------- writing model chain (Groq primary) ----------------

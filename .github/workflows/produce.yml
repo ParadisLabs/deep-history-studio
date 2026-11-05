@@ -92,8 +92,6 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           HUB_URL: ${{ secrets.HUB_URL }}
           HUB_WEBHOOK_SECRET: ${{ secrets.HUB_WEBHOOK_SECRET }}
-          HUB_URL: ${{ secrets.HUB_URL }}
-          HUB_WEBHOOK_SECRET: ${{ secrets.HUB_WEBHOOK_SECRET }}
 
       - name: Notify (Telegram + hub)
         id: notify

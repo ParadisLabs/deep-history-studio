@@ -79,7 +79,7 @@ def generate_image(account_id, token, prompt, out_path, tries=3):
     last_err = None
     for i in range(tries):
         try:
-            if not reserve_image("deep-history-studio", f"{os.path.basename(out_path)}:{i}"):
+            if not reserve_image("deep-history-studio", f"{out_path}:{i}"):
                 if _pollinations_image(full_prompt, out_path):
                     return
                 raise DailyLimitError("quota denied and fallback failed")

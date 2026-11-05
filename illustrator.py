@@ -13,6 +13,8 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
+from quota import reserve_image
+
 from config import IMAGE_MODEL, IMAGE_STEPS, STYLE_SUFFIX
 
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/120 Safari/537.36"}
@@ -77,6 +79,10 @@ def generate_image(account_id, token, prompt, out_path, tries=3):
     last_err = None
     for i in range(tries):
         try:
+            if not reserve_image("deep-history-studio", f"{os.path.basename(out_path)}:{i}"):
+                if _pollinations_image(full_prompt, out_path):
+                    return
+                raise DailyLimitError("quota denied and fallback failed")
             req = urllib.request.Request(
                 cf_url(account_id), data=data,
                 headers={**UA, "Content-Type": "application/json",

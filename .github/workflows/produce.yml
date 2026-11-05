@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: Compile all Python modules
-        run: python -m compileall -q .
+        run: python -m compileall -q . && python -m unittest discover -s tests -v
 
   produce:
     if: github.event_name != 'pull_request'

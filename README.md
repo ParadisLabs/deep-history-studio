@@ -30,3 +30,8 @@ curl -X POST https://api.github.com/repos/<owner>/<repo>/dispatches \
   -H "Accept: application/vnd.github+json" \
   -d '{"event_type":"opshub.produce","client_payload":{"topic":"","new_series":false,"reason":"opshub nightly"}}'
 ```
+
+
+## Research sources
+
+The researcher combines Wikipedia article extracts with free Library of Congress JSON catalog searches. LOC records are stored with their record URL, date, contributor and rights statement when supplied. Catalog descriptions are treated as metadata/corroboration, not as a substitute for full primary-source text or proof of every historical claim. The LOC connector requires no API key. Future connectors such as Smithsonian Open Access and Europeana should be enabled only after their free API keys are created and each asset's reuse rights are checked.

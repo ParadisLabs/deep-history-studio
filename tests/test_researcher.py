@@ -5,7 +5,7 @@ import unittest
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
-from researcher import parse_loc_results
+from researcher import parse_loc_results, parse_crossref_results
 
 
 class LibraryOfCongressParsing(unittest.TestCase):
@@ -48,6 +48,40 @@ class LibraryOfCongressParsing(unittest.TestCase):
             for i in range(5)
         ]}
         self.assertEqual(len(parse_loc_results(payload, limit=2)), 2)
+
+
+class CrossrefParsing(unittest.TestCase):
+    def test_parses_attributed_scholarly_metadata(self):
+        payload = {"message": {"items": [{
+            "title": ["Trade routes in the medieval Mediterranean"],
+            "DOI": "10.1234/example.1",
+            "URL": "https://doi.org/10.1234/example.1",
+            "publisher": "Example University Press",
+            "published": {"date-parts": [[2021, 4, 1]]},
+            "author": [{"given": "Amina", "family": "Example"}],
+            "abstract": "<jats:p>Examines port records and merchant networks.</jats:p>",
+        }]}}
+        rows = parse_crossref_results(payload)
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["source_type"], "Crossref scholarly metadata")
+        self.assertIn("Amina Example", rows[0]["text"])
+        self.assertIn("2021", rows[0]["text"])
+        self.assertIn("Examines port records", rows[0]["text"])
+        self.assertEqual(rows[0]["doi"], "10.1234/example.1")
+        self.assertIn("primary evidence", rows[0]["evidence_level"])
+
+    def test_skips_records_without_title_or_resolvable_url(self):
+        payload = {"message": {"items": [
+            {"DOI": "10.1/no-title"},
+            {"title": ["No DOI or URL"]},
+        ]}}
+        self.assertEqual(parse_crossref_results(payload), [])
+
+    def test_respects_result_limit(self):
+        payload = {"message": {"items": [
+            {"title": [f"Paper {i}"], "DOI": f"10.1/{i}"} for i in range(5)
+        ]}}
+        self.assertEqual(len(parse_crossref_results(payload, limit=2)), 2)
 
 
 if __name__ == "__main__":

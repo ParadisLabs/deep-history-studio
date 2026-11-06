@@ -43,6 +43,16 @@ class FreeVideoSafetyTests(unittest.TestCase):
             wiki.assert_called_once()
             archive.assert_called_once()
 
+    def test_total_provider_failure_is_not_cached(self):
+        with tempfile.TemporaryDirectory() as directory:
+            with patch.object(free_video, "search_wikimedia", side_effect=RuntimeError("offline")) as wiki, \
+                 patch.object(free_video, "search_internet_archive", side_effect=RuntimeError("offline")) as archive:
+                free_video.search_free_videos("ancient rome", directory)
+                free_video.search_free_videos("ancient rome", directory)
+            self.assertEqual(wiki.call_count, 2)
+            self.assertEqual(archive.call_count, 2)
+            self.assertEqual(list(Path(directory).glob("*.json")), [])
+
 
 if __name__ == "__main__":
     unittest.main()

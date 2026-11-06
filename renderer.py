@@ -139,6 +139,8 @@ def make_segment(shot, seg_path, pad_silence=0.6):
         f"[a1][2:a]amix=inputs=2:duration=first:dropout_transition=0[a]",
         "-map", "[v]", "-map", "[a]",
         *encoder_args(FPS, crf=19),
+        # Keep the studio's Telegram-aware bitrate budget while using CRF quality control.
+        "-b:v", VIDEO_BITRATE, "-maxrate", "1100k", "-bufsize", "1800k",
         "-c:a", "aac", "-b:a", AUDIO_BITRATE,
         seg_path,
     ]

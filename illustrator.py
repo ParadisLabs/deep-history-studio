@@ -107,6 +107,24 @@ def generate_image(account_id, token, prompt, out_path, tries=3):
                     return
                 raise DailyLimitError(f"Cloudflare quota: {last_err}") from e
             if e.code == 400:
+                # Cloudflare's moderation classifier can reject an otherwise
+                # educational history prompt. Do not retry the identical
+                # prompt; use a deliberately neutral fallback illustration
+                # so one false-positive does not abort the entire episode.
+                moderation_error = ("nsfw" in detail.lower()
+                                    or "moderation" in detail.lower()
+                                    or "8007" in detail)
+                if moderation_error:
+                    safe_prompt = (
+                        "A calm, age-appropriate educational history documentary "
+                        "illustration showing a simple stick figure studying "
+                        "historical artifacts, books, maps and traditional architecture "
+                        "in a peaceful museum-like setting. No combat, weapons, injury, "
+                        "blood, nudity, or text. " + STYLE_SUFFIX
+                    )[:2048]
+                    print("[illustrator] prompt moderation rejection; trying neutral fallback scene")
+                    if _pollinations_image(safe_prompt, out_path):
+                        return
                 raise RuntimeError(f"illustrator: bad request: {last_err}") from e
             time.sleep(3 * (i + 1))
         except Exception as e:

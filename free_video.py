@@ -50,9 +50,10 @@ def _allowed_commons_license(short_name: str, license_url: str) -> bool:
 
 def _allowed_archive_license(url: str) -> bool:
     value = (url or "").strip().lower()
-    if not value.startswith("https://creativecommons.org/"):
+    parsed = urllib.parse.urlparse(value)
+    if parsed.scheme not in {"http", "https"} or parsed.hostname != "creativecommons.org":
         return False
-    return any(token in value for token in (
+    return any(token in parsed.path for token in (
         "/licenses/by/", "/licenses/by-sa/",
         "/publicdomain/zero/", "/publicdomain/mark/",
     ))

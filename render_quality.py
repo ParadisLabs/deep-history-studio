@@ -55,10 +55,15 @@ def validate_video(path, width=VIDEO_WIDTH, height=VIDEO_HEIGHT, min_fps=24):
         raise RuntimeError(f"render QA failed: expected H.264, got {video.get('codec_name')}")
     if video.get("pix_fmt") != "yuv420p":
         raise RuntimeError(f"render QA failed: expected yuv420p, got {video.get('pix_fmt')}")
+    rate = video.get("avg_frame_rate") or video.get("r_frame_rate") or "0/1"
+    numerator, denominator = rate.split("/", 1)
+    actual_fps = float(numerator) / max(float(denominator), 1.0)
+    if actual_fps < min_fps:
+        raise RuntimeError(f"render QA failed: expected at least {min_fps}fps, got {actual_fps:g}")
     duration = float(data.get("format", {}).get("duration") or 0)
     if duration <= 0:
         raise RuntimeError(f"render QA failed: invalid duration: {path}")
     return {
         "width": width, "height": height, "codec": "h264",
-        "duration": duration, "audio": True,
+        "fps": actual_fps, "duration": duration, "audio": True,
     }

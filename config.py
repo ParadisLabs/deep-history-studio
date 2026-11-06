@@ -31,13 +31,11 @@ MIN_CHAPTERS = 5
 MAX_CHAPTERS = 7
 
 # ---------------- visual style ----------------
-# The stick-figure documentary look. This string is appended to EVERY image
-# prompt so all images share one visual identity. Do not remove the
-# consistent elements (line weight, paper, single accent color).
-# Vertical 9:16 framing optimized for TikTok/YouTube Shorts engagement.
-STYLE_SUFFIX = ("cinematic photorealistic still, shot on 85mm lens, shallow depth of field, volumetric golden-hour light with soft god rays, rich film grain, deep teal and amber color grade, hyper-detailed skin and fabric textures, dramatic composition, prestige TV quality, vertical 9:16 framing, absolutely no text, no letters, no words, portrait close-up, rule of thirds, gaze direction")
+# Consistent hand-drawn stick-figure documentary look, used by illustrator.py.
+# Flux schnell accepts prompt + steps only, so keep exclusions out of unsupported fields.
+STYLE_SUFFIX = ("hand-drawn stick-figure documentary illustration, expressive simple black line-art figures, consistent thin ink line weight, warm off-white textured paper background, restrained single muted ochre accent color, clear readable silhouettes, historically grounded props and architecture, editorial explainer illustration, flat 2D composition, vertical 9:16 framing, no text, no letters, no words, no watermark, not photorealistic")
 
-# Negative guidance where the provider supports it
+# Retained as editorial guidance; the current Flux request schema has no negative_prompt field.
 IMAGE_NEGATIVE = "text, letters, words, captions, watermark, realistic photo, photorealistic, color photograph"
 
 # ---------------- captions ----------------
@@ -50,7 +48,7 @@ CAPTION_FONTSIZE = 34
 WIDTH, HEIGHT = 1080, 1920      # vertical 9:16 for TikTok/YouTube Shorts optimal engagement
 FPS = 30
 KEN_BURNS = True                # slow zoom/pan on every image
-VIDEO_BITRATE = "900k"          # keeps 6-10 min under Telegram's 50MB
+VIDEO_BITRATE = "700k"          # ceiling; renderer may lower this for long videos
 AUDIO_BITRATE = "96k"
 
 # ---------------- writing model chain (Groq primary) ----------------

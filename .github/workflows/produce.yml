@@ -1,6 +1,11 @@
 name: Deep History Studio
 
 on:
+  pull_request:
+    branches: [main]
+  # Validate feature-branch pushes without launching a paid/quota-consuming episode.
+  push:
+    branches-ignore: [main]
   workflow_dispatch:
   schedule:
     - cron: "0 6 * * *"
@@ -13,7 +18,19 @@ permissions:
   contents: write
 
 jobs:
+  validate:
+    if: github.event_name == 'pull_request' || github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Compile all Python modules
+        run: python -m compileall -q . && python -m unittest discover -s tests -v
+
   produce:
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule' || github.event_name == 'repository_dispatch'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -76,6 +93,8 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          HUB_URL: ${{ secrets.HUB_URL }}
+          HUB_WEBHOOK_SECRET: ${{ secrets.HUB_WEBHOOK_SECRET }}
 
       - name: Notify (Telegram + hub)
         id: notify

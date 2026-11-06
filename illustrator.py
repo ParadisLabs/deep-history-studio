@@ -10,7 +10,10 @@ import json
 import os
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
+
+from quota import reserve_image
 
 from config import IMAGE_MODEL, IMAGE_STEPS, STYLE_SUFFIX
 
@@ -43,22 +46,43 @@ def extract_image(payload):
     return base64.b64decode(b64)
 
 
-def generate_image(account_id, token, prompt, out_path, tries=3):
-    """One flux-1-schnell call -> PNG on disk. Raises on hard failure.
+def _pollinations_image(prompt, out_path):
+    """Best-effort keyless fallback when the shared Cloudflare pool is exhausted."""
+    try:
+        q = urllib.parse.quote(prompt[:900])
+        url = ("https://image.pollinations.ai/prompt/" + q +
+               "?width=576&height=1024&model=flux&nologo=true&seed=" +
+               str(int(time.time()) % 100000))
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=180) as r:
+            data = r.read()
+            content_type = r.headers.get("Content-Type", "").lower()
+        valid_magic = (data.startswith(b"\x89PNG\r\n\x1a\n")
+                       or data.startswith(b"\xff\xd8\xff")
+                       or data.startswith(b"RIFF") and data[8:12] == b"WEBP")
+        if len(data) < 10000 or not content_type.startswith("image/") or not valid_magic:
+            raise ValueError("fallback response is not a valid image")
+        with open(out_path, "wb") as f:
+            f.write(data)
+        print(f"[illustrator] fallback image saved ({len(data)//1024} KB)")
+        return True
+    except Exception as e:
+        print(f"[illustrator] fallback failed: {e}")
+        return False
 
-    Cloudflare's schema for flux-1-schnell allows ONLY prompt (<=2048 chars)
-    and steps (<=8). width/height/negative_prompt are rejected with HTTP 400.
-    Output is a square image; the renderer crops it to the vertical frame.
-    """
+
+def generate_image(account_id, token, prompt, out_path, tries=3):
+    """Cloudflare first, then keyless fallback; cached output remains resumable."""
     full_prompt = f"{prompt}. {STYLE_SUFFIX}"[:2048]
-    body = {
-        "prompt": full_prompt,
-        "steps": IMAGE_STEPS,
-    }
+    body = {"prompt": full_prompt, "steps": IMAGE_STEPS}
     data = json.dumps(body).encode()
     last_err = None
     for i in range(tries):
         try:
+            if not reserve_image("deep-history-studio", f"{out_path}:{i}"):
+                if _pollinations_image(full_prompt, out_path):
+                    return
+                raise DailyLimitError("quota denied and fallback failed")
             req = urllib.request.Request(
                 cf_url(account_id), data=data,
                 headers={**UA, "Content-Type": "application/json",
@@ -73,26 +97,41 @@ def generate_image(account_id, token, prompt, out_path, tries=3):
                 f.write(img)
             return
         except urllib.error.HTTPError as e:
-            # read the API error body: it names the offending field
             try:
                 detail = e.read().decode("utf-8", errors="replace")[:400]
             except Exception:
                 detail = ""
             last_err = f"HTTP {e.code}: {detail}"
             if e.code in (429, 402):
-                raise DailyLimitError(f"cloudflare quota: {last_err}") from e
+                if _pollinations_image(full_prompt, out_path):
+                    return
+                raise DailyLimitError(f"Cloudflare quota: {last_err}") from e
             if e.code == 400:
-                # permanent for this payload -> no point retrying
+                # Cloudflare's moderation classifier can reject an otherwise
+                # educational history prompt. Do not retry the identical
+                # prompt; use a deliberately neutral fallback illustration
+                # so one false-positive does not abort the entire episode.
+                moderation_error = ("nsfw" in detail.lower()
+                                    or "moderation" in detail.lower()
+                                    or "8007" in detail)
+                if moderation_error:
+                    safe_prompt = (
+                        "A calm, age-appropriate educational history documentary "
+                        "illustration showing a simple stick figure studying "
+                        "historical artifacts, books, maps and traditional architecture "
+                        "in a peaceful museum-like setting. No combat, weapons, injury, "
+                        "blood, nudity, or text. " + STYLE_SUFFIX
+                    )[:2048]
+                    print("[illustrator] prompt moderation rejection; trying neutral fallback scene")
+                    if _pollinations_image(safe_prompt, out_path):
+                        return
                 raise RuntimeError(f"illustrator: bad request: {last_err}") from e
             time.sleep(3 * (i + 1))
-        except DailyLimitError:
-            raise
         except Exception as e:
             last_err = e
-            msg = str(e)
-            if "429" in msg or "402" in msg:
-                raise DailyLimitError(f"cloudflare quota: {msg}") from e
             time.sleep(3 * (i + 1))
+    if _pollinations_image(full_prompt, out_path):
+        return
     raise RuntimeError(f"illustrator: failed after {tries} tries: {last_err}")
 
 

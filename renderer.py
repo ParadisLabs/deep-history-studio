@@ -12,7 +12,7 @@ import subprocess
 from config import (
     WIDTH, HEIGHT, FPS, KEN_BURNS, AUDIO_BITRATE,
     CAPTIONS, CAPTION_MAX_CHARS, CAPTION_FONT, CAPTION_FONTSIZE,
-    EPISODES_DIR,
+    EPISODES_DIR, TELEGRAM_MB_LIMIT, VIDEO_BITRATE,
 )
 
 AUDIO_RATE = 44100
@@ -154,6 +154,46 @@ def concat_segments(seg_paths, out_path):
     os.remove(list_path)
 
 
+def fit_telegram_size(path):
+    """Shrink an oversized final MP4 before Telegram delivery."""
+    limit = int(TELEGRAM_MB_LIMIT * 1024 * 1024)
+    current = os.path.getsize(path)
+    if current <= limit:
+        return
+    probe = subprocess.run(
+        ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+         "-of", "default=noprint_wrappers=1:nokey=1", path],
+        capture_output=True, text=True,
+    )
+    duration = float(probe.stdout.strip() or 0)
+    if duration <= 0:
+        raise RuntimeError("renderer: cannot determine duration for Telegram transcode")
+    target = int(limit * 0.88 * 8 / duration)
+    audio = int(AUDIO_BITRATE.lower().replace("k", "")) * 1000
+    ceiling = int(VIDEO_BITRATE.lower().replace("k", "")) * 1000
+    video = min(ceiling, max(180000, target - audio - 24000))
+    temp = path + ".telegram-fit.mp4"
+    try:
+        run([
+            "ffmpeg", "-y", "-loglevel", "error", "-i", path,
+            "-c:v", "libx264", "-preset", "medium", "-b:v", str(video),
+            "-maxrate", str(int(video * 1.15)), "-bufsize", str(video * 2),
+            "-c:a", "aac", "-b:a", AUDIO_BITRATE, "-movflags", "+faststart", temp,
+        ])
+        if os.path.getsize(temp) < current:
+            os.replace(temp, path)
+    finally:
+        if os.path.exists(temp):
+            os.remove(temp)
+    final_size = os.path.getsize(path)
+    if final_size > limit:
+        raise RuntimeError(
+            f"renderer: video remains {final_size / (1024*1024):.1f}MB; "
+            f"Telegram limit is {TELEGRAM_MB_LIMIT}MB"
+        )
+    print(f"[renderer] Telegram-safe final size: {final_size / (1024*1024):.1f}MB")
+
+
 def render_episode(episode_dir):
     """All shots -> final episode mp4 in EPISODES_DIR. Resumable."""
     shotlist_path = os.path.join(episode_dir, "shotlist.json")
@@ -182,6 +222,7 @@ def render_episode(episode_dir):
         f"episode_{os.path.basename(os.path.normpath(episode_dir))}.mp4",
     )
     concat_segments(seg_paths, final)
+    fit_telegram_size(final)
 
     p = subprocess.run(
         ["ffprobe", "-v", "error", "-show_entries", "format=duration,size",

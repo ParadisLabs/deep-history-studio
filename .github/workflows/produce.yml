@@ -3,6 +3,9 @@ name: Deep History Studio
 on:
   pull_request:
     branches: [main]
+  # Validate feature-branch pushes without launching a paid/quota-consuming episode.
+  push:
+    branches-ignore: [main]
   workflow_dispatch:
   schedule:
     - cron: "0 6 * * *"
@@ -16,7 +19,7 @@ permissions:
 
 jobs:
   validate:
-    if: github.event_name == 'pull_request'
+    if: github.event_name == 'pull_request' || github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -27,7 +30,7 @@ jobs:
         run: python -m compileall -q . && python -m unittest discover -s tests -v
 
   produce:
-    if: github.event_name != 'pull_request'
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule' || github.event_name == 'repository_dispatch'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

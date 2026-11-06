@@ -173,14 +173,18 @@ def search_free_videos(keyword: str, cache_dir: str = "memory/free_video_cache",
     except (OSError, ValueError, TypeError):
         pass
     results = []
+    provider_succeeded = False
     for provider in (search_wikimedia, search_internet_archive):
         try:
             results.extend(provider(keyword, limit=limit, timeout=timeout))
+            provider_succeeded = True
         except Exception as exc:
             print(f"[free-video] {provider.__name__} unavailable: {exc}")
     results.sort(key=lambda x: x.get("relevance", 0), reverse=True)
     results = results[:limit]
-    path.write_text(json.dumps({"saved_at": time.time(), "results": results}, indent=2))
+    # Cache valid empty searches, but never cache a total provider outage.
+    if provider_succeeded:
+        path.write_text(json.dumps({"saved_at": time.time(), "results": results}, indent=2))
     return results
 
 

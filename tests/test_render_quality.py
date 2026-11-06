@@ -27,13 +27,29 @@ class RenderQualityTests(unittest.TestCase):
         probe.return_value = {
             "streams": [
                 {"codec_type": "video", "codec_name": "h264",
-                 "width": 1080, "height": 1920, "pix_fmt": "yuv420p"},
+                 "width": 1080, "height": 1920, "pix_fmt": "yuv420p",
+                 "avg_frame_rate": "30/1"},
                 {"codec_type": "audio", "codec_name": "aac"},
             ],
             "format": {"duration": "12.5"},
         }
         result = render_quality.validate_video("episode.mp4")
         self.assertEqual(result["duration"], 12.5)
+        self.assertEqual(result["fps"], 30)
+
+    @patch("render_quality.probe_video")
+    def test_validate_rejects_low_frame_rate(self, probe):
+        probe.return_value = {
+            "streams": [
+                {"codec_type": "video", "codec_name": "h264",
+                 "width": 1080, "height": 1920, "pix_fmt": "yuv420p",
+                 "avg_frame_rate": "15/1"},
+                {"codec_type": "audio", "codec_name": "aac"},
+            ],
+            "format": {"duration": "12.5"},
+        }
+        with self.assertRaisesRegex(RuntimeError, "at least 24fps"):
+            render_quality.validate_video("episode.mp4")
 
 
 if __name__ == "__main__":

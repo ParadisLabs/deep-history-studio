@@ -14,6 +14,7 @@ from config import (
     CAPTIONS, CAPTION_MAX_CHARS, CAPTION_FONT, CAPTION_FONTSIZE,
     EPISODES_DIR,
 )
+from render_quality import encoder_args, validate_video
 
 AUDIO_RATE = 44100
 
@@ -110,7 +111,13 @@ def make_segment(shot, seg_path, pad_silence=0.6):
         raise RuntimeError(f"renderer: missing audio {aud}")
 
     if os.path.exists(seg_path):
-        return  # idempotent
+        try:
+            validate_video(seg_path, WIDTH, HEIGHT)
+        except Exception as exc:
+            print(f"[renderer] rebuilding invalid cached segment {idx}: {exc}")
+            os.remove(seg_path)
+        else:
+            return  # validated idempotent cache
 
     dur = probe_audio_duration(aud)
     if dur <= 0:
@@ -131,9 +138,10 @@ def make_segment(shot, seg_path, pad_silence=0.6):
         f"[1:a]apad,aresample={AUDIO_RATE}[a1];"
         f"[a1][2:a]amix=inputs=2:duration=first:dropout_transition=0[a]",
         "-map", "[v]", "-map", "[a]",
-        "-c:v", "libx264", "-preset", "medium", "-crf", "20",
+        *encoder_args(FPS, crf=19),
+        # Keep the studio's Telegram-aware bitrate budget while using CRF quality control.
+        "-b:v", VIDEO_BITRATE, "-maxrate", "1100k", "-bufsize", "1800k",
         "-c:a", "aac", "-b:a", AUDIO_BITRATE,
-        "-r", str(FPS),
         seg_path,
     ]
     run(cmd)
@@ -149,9 +157,10 @@ def concat_segments(seg_paths, out_path):
     run([
         "ffmpeg", "-y", "-loglevel", "error",
         "-f", "concat", "-safe", "0", "-i", list_path,
-        "-c", "copy", out_path,
+        "-c", "copy", "-movflags", "+faststart", out_path,
     ])
     os.remove(list_path)
+    validate_video(out_path, WIDTH, HEIGHT)
 
 
 def render_episode(episode_dir):
@@ -182,6 +191,8 @@ def render_episode(episode_dir):
         f"episode_{os.path.basename(os.path.normpath(episode_dir))}.mp4",
     )
     concat_segments(seg_paths, final)
+    qa = validate_video(final, WIDTH, HEIGHT)
+    print(f"[renderer] QA: {qa['width']}x{qa['height']} H.264 · {qa['duration']:.1f}s · audio OK")
 
     p = subprocess.run(
         ["ffprobe", "-v", "error", "-show_entries", "format=duration,size",

@@ -4,6 +4,8 @@ on:
   pull_request:
     paths:
       - "renderer.py"
+      - "pipeline.py"
+      - ".github/workflows/produce.yml"
       - "render_quality.py"
       - "tests/**"
       - ".github/workflows/render-quality-tests.yml"
@@ -26,7 +28,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Compile studio renderer
-        run: python -m py_compile renderer.py render_quality.py
+      - name: Compile production pipeline and renderer
+        run: python -m py_compile pipeline.py renderer.py render_quality.py
       - name: Run render quality tests
         run: python -m unittest discover -s tests -p "test_render_quality.py" -v

@@ -13,6 +13,8 @@ import json
 import os
 import sys
 import time
+import subprocess
+import tempfile
 import urllib.request
 
 import hub
@@ -26,6 +28,7 @@ from writer import write_script, word_count
 from illustrator import illustrate_episode, write_shotlist, DailyLimitError
 from narrator import narrate_episode
 from renderer import render_episode
+from render_quality import validate_video
 
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"}
 
@@ -137,39 +140,92 @@ def tg(method, payload):
         return json.loads(r.read().decode())
 
 
-def send_video(path, caption):
+def telegram_ready_video(path):
+    """Transcode an oversized episode to fit Telegram without dropping 1080p."""
     size_mb = os.path.getsize(path) / (1024 * 1024)
-    if size_mb > TELEGRAM_MB_LIMIT:
-        raise RuntimeError(
-            f"video is {size_mb:.1f}MB > {TELEGRAM_MB_LIMIT}MB limit"
-        )
-    boundary = f"----dhs{int(time.time())}"
-    boundary_bytes = boundary.encode()
-    fields = [("chat_id", os.environ.get("TELEGRAM_CHAT_ID", "")),
-              ("caption", caption)]
-    with open(path, "rb") as f:
-        content = b""
-        for name, val in fields:
-            content += b"--" + boundary_bytes + b"\r\n"
-            content += f'Content-Disposition: form-data; name="{name}"\r\n\r\n'.encode()
-            content += (val or "").encode() + b"\r\n"
-        content += b"--" + boundary_bytes + b"\r\n"
-        content += (b'Content-Disposition: form-data; name="video"; '
-                    b'filename="episode.mp4"\r\n'
-                    b"Content-Type: video/mp4\r\n\r\n")
-        content += f.read() + b"\r\n"
-        content += b"--" + boundary_bytes + b"--\r\n"
-    req = urllib.request.Request(
-        f"https://api.telegram.org/bot{tok_for_bot()}/sendVideo",
-        data=content,
-        headers={
-            "Content-Type": f"multipart/form-data; boundary={boundary}",
-            "User-Agent": UA["User-Agent"],
-        },
-    )
-    with urllib.request.urlopen(req, timeout=600) as r:
-        return json.loads(r.read().decode())
+    if size_mb <= TELEGRAM_MB_LIMIT:
+        return path, None
 
+    probe = subprocess.run(
+        ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+         "-of", "default=noprint_wrappers=1:nokey=1", path],
+        capture_output=True, text=True, check=True,
+    )
+    duration = float(probe.stdout.strip())
+    if duration <= 0:
+        raise RuntimeError("cannot safely transcode Telegram upload: invalid duration")
+
+    # Target 46 MiB, leaving headroom below Telegram's configured 48 MiB cap.
+    target_bytes = 46 * 1024 * 1024
+    video_kbps = int((target_bytes * 8 / duration / 1000) - 112)
+    if video_kbps < 250:
+        raise RuntimeError(
+            f"episode duration requires {video_kbps} kbps video to fit Telegram; "
+            "below safe quality floor. Original retained as workflow artifact."
+        )
+
+    fd, compressed = tempfile.mkstemp(prefix="dhs-telegram-", suffix=".mp4")
+    os.close(fd)
+    try:
+        subprocess.run([
+            "ffmpeg", "-y", "-loglevel", "error", "-i", path,
+            "-vf", "scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2,fps=30,format=yuv420p",
+            "-c:v", "libx264", "-preset", "veryfast",
+            "-b:v", f"{video_kbps}k", "-maxrate", f"{video_kbps}k",
+            "-bufsize", f"{video_kbps * 2}k",
+            "-c:a", "aac", "-b:a", "96k",
+            "-movflags", "+faststart", compressed,
+        ], check=True, capture_output=True, text=True)
+        validate_video(compressed, 1080, 1920)
+        compressed_mb = os.path.getsize(compressed) / (1024 * 1024)
+        if compressed_mb > TELEGRAM_MB_LIMIT:
+            raise RuntimeError(
+                f"transcoded episode is {compressed_mb:.1f}MB, above "
+                f"the {TELEGRAM_MB_LIMIT}MB Telegram limit; original retained as artifact"
+            )
+        print(
+            f"[pipeline] Telegram fallback transcode: {size_mb:.1f}MB -> "
+            f"{compressed_mb:.1f}MB at {video_kbps} kbps"
+        )
+        return compressed, compressed
+    except Exception:
+        if os.path.exists(compressed):
+            os.remove(compressed)
+        raise
+
+
+def send_video(path, caption):
+    upload_path, temporary_path = telegram_ready_video(path)
+    try:
+        boundary = f"----dhs{int(time.time())}"
+        boundary_bytes = boundary.encode()
+        fields = [("chat_id", os.environ.get("TELEGRAM_CHAT_ID", "")),
+                  ("caption", caption)]
+        with open(upload_path, "rb") as f:
+            content = b""
+            for name, val in fields:
+                content += b"--" + boundary_bytes + b"\\r\\n"
+                content += f'Content-Disposition: form-data; name="{name}"\\r\\n\\r\\n'.encode()
+                content += (val or "").encode() + b"\\r\\n"
+            content += b"--" + boundary_bytes + b"\\r\\n"
+            content += (b'Content-Disposition: form-data; name="video"; '
+                        b'filename="episode.mp4"\\r\\n'
+                        b"Content-Type: video/mp4\\r\\n\\r\\n")
+            content += f.read() + b"\\r\\n"
+            content += b"--" + boundary_bytes + b"--\\r\\n"
+        req = urllib.request.Request(
+            f"https://api.telegram.org/bot{tok_for_bot()}/sendVideo",
+            data=content,
+            headers={
+                "Content-Type": f"multipart/form-data; boundary={boundary}",
+                "User-Agent": UA["User-Agent"],
+            },
+        )
+        with urllib.request.urlopen(req, timeout=600) as r:
+            return json.loads(r.read().decode())
+    finally:
+        if temporary_path and os.path.exists(temporary_path):
+            os.remove(temporary_path)
 
 def send_message(text):
     return tg("sendMessage", {

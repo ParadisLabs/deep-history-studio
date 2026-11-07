@@ -12,6 +12,11 @@ on:
 permissions:
   contents: write
 
+# Serialize production runs so memory/topic commits cannot race each other.
+concurrency:
+  group: deep-history-production
+  cancel-in-progress: false
+
 jobs:
   produce:
     runs-on: ubuntu-latest
@@ -108,7 +113,19 @@ jobs:
           git config user.email "actions@github.com"
           git add memory/ episodes/*/script.json episodes/*/shotlist.json
           git diff --cached --quiet || git commit -m "episode: auto"
-          git push
+          # Rebase generated memory/episode metadata if main advanced after checkout.
+          # Never force-push production history.
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push attempt ${attempt} failed; refreshing main."
+            sleep $((attempt * 2))
+          done
+          echo "Unable to push production memory after 3 attempts." >&2
+          exit 1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

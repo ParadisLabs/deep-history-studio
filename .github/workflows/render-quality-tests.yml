@@ -8,6 +8,7 @@ on:
       - ".github/workflows/produce.yml"
       - "render_quality.py"
       - "tests/**"
+      - "requirements.txt"
       - ".github/workflows/render-quality-tests.yml"
   push:
     branches: ["main"]
@@ -28,7 +29,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install studio dependencies
+        run: pip install -r requirements.txt
       - name: Compile production pipeline and renderer
         run: python -m py_compile pipeline.py renderer.py render_quality.py
-      - name: Run render quality tests
-        run: python -m unittest discover -s tests -p "test_render_quality.py" -v
+      - name: Run studio tests
+        run: python -m unittest discover -s tests -v

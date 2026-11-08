@@ -52,7 +52,7 @@ def assemble(episode_ids, output, episodes_root="episodes", skip_openers=True):
             )
             subprocess.run([
                 "ffmpeg", "-y", "-loglevel", "error", "-i", str(clip),
-                "-filter_complex", vf, "-map", "[v]", "-map", "0:a?",
+                "-filter_complex", vf, "-map", "[v]", "-map", "0:a",
                 "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
                 "-c:a", "aac", "-b:a", "160k", "-ar", "44100",
                 "-movflags", "+faststart", str(target)
@@ -60,7 +60,7 @@ def assemble(episode_ids, output, episodes_root="episodes", skip_openers=True):
             normalized.append(target)
 
         concat_file = Path(tmp) / "concat.txt"
-        concat_file.write_text("".join(f"file '{p.as_posix()}'\\n" for p in normalized))
+        concat_file.write_text("".join(f"file '{p.as_posix()}'\n" for p in normalized))
         subprocess.run([
             "ffmpeg", "-y", "-loglevel", "error", "-f", "concat",
             "-safe", "0", "-i", str(concat_file), "-c", "copy",

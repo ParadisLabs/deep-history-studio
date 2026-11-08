@@ -15,6 +15,12 @@ permissions:
 jobs:
   produce:
     runs-on: ubuntu-latest
+    env:
+      OPSHUB_JOB_ID: ${{ github.event.client_payload.job_id }}
+      OPSHUB_STUDIO: deep-history
+      HUB_URL: ${{ secrets.HUB_URL }}
+      OPSHUB_URL: ${{ secrets.OPSHUB_URL }}
+      HUB_WEBHOOK_SECRET: ${{ secrets.HUB_WEBHOOK_SECRET }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -57,6 +63,9 @@ jobs:
           ffmpeg -version | head -1
           ffprobe -version | head -1
 
+      - name: report start to OpsHub
+        run: python job_report.py running research 1 "pipeline starting" || true
+
       - name: Write (research + script)
         id: write
         run: |
@@ -91,6 +100,10 @@ jobs:
           HUB_WEBHOOK_SECRET: ${{ secrets.HUB_WEBHOOK_SECRET }}
           GITHUB_REPOSITORY: ${{ github.repository }}
 
+      - name: report completion to OpsHub
+        if: success()
+        run: python job_report.py awaiting_approval approval 100 "render complete" || true
+
       - name: Artifact fallback if Telegram failed
         if: always() && steps.notify.outcome != 'success'
         uses: actions/upload-artifact@v4
@@ -124,6 +137,10 @@ jobs:
             notify.log
           if-no-files-found: ignore
           retention-days: 30
+
+      - name: report failure to OpsHub
+        if: failure()
+        run: python job_report.py failed rendering 0 "pipeline failed - see logs" || true
 
       - name: Report result to Telegram (quota-aware)
         if: failure()

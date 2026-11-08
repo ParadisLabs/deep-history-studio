@@ -33,6 +33,6 @@ jobs:
       - name: Install studio dependencies
         run: pip install -r requirements.txt
       - name: Compile production pipeline and renderer
-        run: python -m py_compile pipeline.py renderer.py render_quality.py
+        run: python -m py_compile pipeline.py renderer.py render_quality.py longform.py
       - name: Run studio tests
         run: python -m unittest discover -s tests -v

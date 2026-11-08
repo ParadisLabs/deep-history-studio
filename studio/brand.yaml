@@ -1,0 +1,18 @@
+brand: deep_history
+display_name: Deep History
+languages: [en, tr]
+character:
+  identity: recurring hand-drawn explorer/storyteller
+  asset_root: assets/characters/deep-history
+formats:
+  short: {aspect_ratio: "9:16", target_seconds: [30, 60]}
+  long: {aspect_ratio: "16:9", target_minutes: [8, 15]}
+editorial:
+  promise: vivid, well-sourced history without fabricated certainty or sensationalized claims
+  localization: one verified research dossier; separately written natural English and Turkish scripts
+long_form:
+  render_from_reusable_scenes: true
+  preserve_narrative_continuity: true
+  include_chapters_transitions_source_credits: true
+  never_stitch_finished_shorts_with_repeated_hooks: true
+publishing: {enabled: false, compliance_gate: true, human_approval: true}

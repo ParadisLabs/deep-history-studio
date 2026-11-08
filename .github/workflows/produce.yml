@@ -19,6 +19,8 @@ concurrency:
 
 jobs:
   produce:
+    # Keep scheduled/manual/dispatch production paused until API and compliance setup is complete.
+    if: vars.PRODUCTION_ENABLED == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

@@ -1,8 +1,10 @@
+import shutil
+import subprocess
 import tempfile
 import unittest
 from pathlib import Path
 
-from longform import collect_segments
+from longform import assemble, collect_segments
 
 
 class LongFormCollectionTests(unittest.TestCase):

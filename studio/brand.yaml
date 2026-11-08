@@ -1,6 +1,6 @@
 brand: deep_history
-display_name: Deep History
-languages: [en, tr]
+display_name: Deep History English
+languages: [en]
 character:
   identity: recurring hand-drawn explorer/storyteller
   asset_root: assets/characters/deep-history
@@ -9,7 +9,7 @@ formats:
   long: {aspect_ratio: "16:9", target_minutes: [8, 15]}
 editorial:
   promise: vivid, well-sourced history without fabricated certainty or sensationalized claims
-  localization: one verified research dossier; separately written natural English and Turkish scripts
+  localization: independently researched and written natural English scripts; Turkish edition will be developed separately
 long_form:
   render_from_reusable_scenes: true
   preserve_narrative_continuity: true

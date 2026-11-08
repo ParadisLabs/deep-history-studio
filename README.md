@@ -1,4 +1,9 @@
 
+# Deep History
+
+Bilingual history documentary studio: carefully sourced stories, a recurring illustrated explorer, vertical Shorts and chaptered long-form documentaries in English and Turkish.
+
+
 ## OpsHub
 
 One shared module, `hub.py`, feeds and is triggered by OpsHub in every studio.

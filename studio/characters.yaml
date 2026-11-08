@@ -1,0 +1,27 @@
+version: 1
+brand: deep_history
+character_id: deep_history_explorer
+visual_identity:
+  style: "minimalist hand-drawn 2D illustration; stick-figure-inspired proportions; warm paper-and-ink palette"
+  silhouette: "slim friendly explorer; simple readable shapes; hoodie and practical trousers"
+  signature: "wide-brim explorer hat over a hood; compact field satchel"
+  face: "simple expressive face; consistent hairline, eyes, nose and head proportions"
+personality: [curious, thoughtful, enthusiastic, quietly witty]
+poses_required: [front, three_quarter, side, back, standing, seated, pointing, explaining, holding_artifact]
+expressions_required: [curious, excited, puzzled, determined, concerned, amazed]
+animation_contract:
+  preserve_model_proportions: true
+  use_reference_sheet_for_every_scene: true
+  mouth_shapes: [rest, A, E, O, M, F, L]
+  hand_pose_library: true
+  no_photorealistic_character_reinterpretation: true
+language_editions:
+  en: {voice_locale: "en", script: independently_written}
+  tr: {voice_locale: "tr-TR", script: independently_written}
+asset_paths:
+  model_sheet: "assets/characters/deep-history/model-sheet.png"
+  expressions: "assets/characters/deep-history/expressions/"
+  mouth_shapes: "assets/characters/deep-history/mouth/"
+  poses: "assets/characters/deep-history/poses/"
+  transparent_renders: "assets/characters/deep-history/renders/"
+rights: "Use only studio-owned or explicitly commercially licensed character assets."

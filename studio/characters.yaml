@@ -17,7 +17,7 @@ animation_contract:
   no_photorealistic_character_reinterpretation: true
 language_editions:
   en: {voice_locale: "en", script: independently_written}
-  tr: {voice_locale: "tr-TR", script: independently_written}
+  tr: {status: planned_separate_sibling_studio}
 asset_paths:
   model_sheet: "assets/characters/deep-history/model-sheet.png"
   expressions: "assets/characters/deep-history/expressions/"

@@ -17,7 +17,7 @@ from render_quality import validate_video
 ROOT = Path(__file__).parent
 
 
-def collect_segments(episode_ids, episodes_root="episodes", skip_openers=True):
+def collect_segments(episode_ids, episodes_root="episodes", skip_openers=False):
     paths = []
     for index, episode_id in enumerate(episode_ids):
         folder = Path(episodes_root) / episode_id / "segments"
@@ -34,7 +34,7 @@ def collect_segments(episode_ids, episodes_root="episodes", skip_openers=True):
     return paths
 
 
-def assemble(episode_ids, output, episodes_root="episodes", skip_openers=True):
+def assemble(episode_ids, output, episodes_root="episodes", skip_openers=False):
     clips = collect_segments(episode_ids, episodes_root, skip_openers)
     output = Path(output)
     output.parent.mkdir(parents=True, exist_ok=True)
@@ -77,11 +77,11 @@ def main():
                         help="episode folder IDs in narrative order")
     parser.add_argument("--output", required=True)
     parser.add_argument("--episodes-root", default="episodes")
-    parser.add_argument("--keep-repeat-hooks", action="store_true",
-                        help="do not remove the first scene from later episodes")
+    parser.add_argument("--skip-repeated-openers", action="store_true",
+                        help="explicitly omit first scene of later episodes when it is a repeated hook")
     args = parser.parse_args()
     result = assemble(args.episodes, args.output, args.episodes_root,
-                      skip_openers=not args.keep_repeat_hooks)
+                      skip_openers=args.skip_repeated_openers)
     print(json.dumps(result, indent=2))
 
 

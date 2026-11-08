@@ -1,0 +1,37 @@
+version: 1
+brand: deep_history
+status: development_contract
+languages: [en, tr]
+formats:
+  shorts:
+    aspect_ratio: "9:16"
+    target_duration_seconds: [30, 60]
+    export: "1080x1920"
+  long_form:
+    aspect_ratio: "16:9"
+    target_duration_minutes: [8, 15]
+    export: "1920x1080"
+    assembly: "scene_based_continuous_narrative"
+    rules:
+      - "Build from reusable scene-level assets and narration, not finished Shorts."
+      - "Maintain one continuous narrative arc, transitions, chapters, music bed and end credits."
+      - "Create language-specific narration and on-screen text; do not machine-translate finished scripts verbatim."
+editorial:
+  research: "Primary historical scholarship, museum/archive records, academic publishers and reputable reference works; cite claims and distinguish evidence from interpretation."
+  visual_identity: "Hand-drawn explorer character from supplied reference sheet; illustrated historical scenes; no photorealistic reinterpretation."
+  long_form_story: "Continuous documentary narrative with chronology, chapters, transitions, scene-level narration, contextual maps/artifacts and end credits; never concatenate completed Shorts."
+quality_gates:
+  - "Validate script structure, factual claims and source citations."
+  - "Validate every asset's provenance and commercial-use licence."
+  - "Check narration timing, audio levels, subtitles and language correctness."
+  - "Run ffprobe and render-quality validation for dimensions, duration, audio and codec."
+  - "Run originality/repetition checks and inspect thumbnail/title for accuracy."
+  - "Require human approval before any public upload."
+publishing:
+  youtube: disabled
+  tiktok: disabled
+  instagram: disabled
+  drive_delivery: pending_credentials
+credentials:
+  required_before_live_run: true
+  paid_services_must_be_explicitly_enabled: true

@@ -2,10 +2,10 @@ version: 1
 brand: deep_history
 character_id: deep_history_explorer
 visual_identity:
-  style: "minimalist hand-drawn 2D illustration; stick-figure-inspired proportions; warm paper-and-ink palette"
-  silhouette: "slim friendly explorer; simple readable shapes; hoodie and practical trousers"
-  signature: "wide-brim explorer hat over a hood; compact field satchel"
-  face: "simple expressive face; consistent hairline, eyes, nose and head proportions"
+  style: "hand-drawn 2D character illustration matching the supplied model sheet; warm parchment-and-ink palette; clean expressive linework"
+  silhouette: "friendly young male explorer; light hoodie, practical cargo trousers and sneakers; consistent slim proportions"
+  signature: "wide-brim explorer hat; light hoodie; compact field satchel; preserve the model-sheet front, three-quarter and side silhouettes"
+  face: "youthful expressive face with swept light hair; preserve the exact eye, nose, smile and head proportions shown in the supplied model sheet"
 personality: [curious, thoughtful, enthusiastic, quietly witty]
 poses_required: [front, three_quarter, side, back, standing, seated, pointing, explaining, holding_artifact]
 expressions_required: [curious, excited, puzzled, determined, concerned, amazed]

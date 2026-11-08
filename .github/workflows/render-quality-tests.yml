@@ -3,6 +3,7 @@ name: Render quality tests
 on:
   pull_request:
     paths:
+      - "longform.py"
       - "renderer.py"
       - "pipeline.py"
       - ".github/workflows/produce.yml"

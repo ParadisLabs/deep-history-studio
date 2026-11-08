@@ -8,7 +8,7 @@ from longform import assemble, collect_segments
 
 
 class LongFormCollectionTests(unittest.TestCase):
-    def test_keeps_first_episode_and_skips_later_openers(self):
+    def test_preserves_all_scenes_by_default(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             for episode, names in {
@@ -20,9 +20,23 @@ class LongFormCollectionTests(unittest.TestCase):
                 for name in names:
                     (folder / name).touch()
             result = collect_segments(["ep1", "ep2"], tmp)
-            self.assertEqual([p.name for p in result],
-                             ["seg_001.mp4", "seg_002.mp4",
-                              "seg_002.mp4", "seg_003.mp4"])
+            self.assertEqual([(p.parent.parent.name, p.name) for p in result],
+                             [("ep1", "seg_001.mp4"), ("ep1", "seg_002.mp4"),
+                              ("ep2", "seg_001.mp4"), ("ep2", "seg_002.mp4"),
+                              ("ep2", "seg_003.mp4")])
+
+    def test_can_explicitly_skip_later_openers(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            for episode in ("ep1", "ep2"):
+                folder = root / episode / "segments"
+                folder.mkdir(parents=True)
+                for name in ("seg_001.mp4", "seg_002.mp4"):
+                    (folder / name).touch()
+            result = collect_segments(["ep1", "ep2"], tmp, skip_openers=True)
+            self.assertEqual([(p.parent.parent.name, p.name) for p in result],
+                             [("ep1", "seg_001.mp4"), ("ep1", "seg_002.mp4"),
+                              ("ep2", "seg_002.mp4")])
 
     def test_missing_episode_fails_closed(self):
         with tempfile.TemporaryDirectory() as tmp:

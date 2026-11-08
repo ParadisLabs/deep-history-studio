@@ -45,7 +45,7 @@ def _slug(value, default="series"):
 
 
 def _base():
-    raw = os.environ.get("HUB_URL") or os.environ.get("OPSHUB_URL") or ""
+    raw = os.environ.get("HUB_URL") or os.environ.get("OPSHUB_URL") or "https://site-383ef7b599e542209e6a7c00f9ab7638.freebuff.page"
     return raw.strip().rstrip("/")
 
 

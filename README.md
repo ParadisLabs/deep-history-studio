@@ -35,3 +35,21 @@ curl -X POST https://api.github.com/repos/<owner>/<repo>/dispatches \
   -H "Accept: application/vnd.github+json" \
   -d '{"event_type":"opshub.produce","client_payload":{"topic":"","new_series":false,"reason":"opshub nightly"}}'
 ```
+
+
+## Documentary-length long-form assembly
+
+The normal episode renderer produces resumable scene files under
+`episodes/<episode-id>/segments/`. To create a landscape documentary from
+several completed episodes, list their IDs in narrative order:
+
+```bash
+python longform.py --episodes ep001 ep002 ep003 --output exports/deep-history-documentary.mp4
+```
+
+The first scene of each later episode is omitted by default to avoid repeating
+its short-form opening hook. Use `--keep-repeat-hooks` only when those openings
+are deliberately part of the documentary narrative. Portrait scenes are
+presented intact over a blurred 16:9 background; they are not stretched or
+cropped to landscape. The assembler requires FFmpeg/FFprobe and validates the
+1920x1080 output. It does not publish or upload anything.

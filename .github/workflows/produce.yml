@@ -19,6 +19,8 @@ concurrency:
 
 jobs:
   produce:
+    # GLOBAL SAFETY HOLD: enable only after compliance and API setup.
+    if: vars.PRODUCTION_ENABLED == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

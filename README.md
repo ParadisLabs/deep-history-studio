@@ -1,7 +1,7 @@
 
-# Deep History
+# Deep History English
 
-Bilingual history documentary studio: carefully sourced stories, a recurring illustrated explorer, vertical Shorts and chaptered long-form documentaries in English and Turkish.
+English-language history documentary studio: carefully sourced stories, a recurring illustrated explorer, vertical Shorts and chaptered long-form documentaries. A separate Turkish edition is planned for a later phase.
 
 
 ## OpsHub

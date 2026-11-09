@@ -49,11 +49,15 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Produce (vertical + landscape, H.264/AAC)
+        env:
+          TOPIC: ${{ inputs.topic }}
+          SYNTHETIC: ${{ inputs.synthetic }}
         run: |
-          ARGS="--out artifacts/production --json"
-          if [ "${{ inputs.topic }}" != "" ]; then ARGS="$ARGS --topic \"${{ inputs.topic }}\""; fi
-          if [ "${{ inputs.synthetic }}" = "true" ]; then ARGS="$ARGS --mode synthetic --no-tts"; fi
-          eval python phase3_produce.py $ARGS | tee production.json
+          set -euo pipefail
+          ARGS=(--out artifacts/production --json)
+          if [ -n "${TOPIC:-}" ]; then ARGS+=(--topic "$TOPIC"); fi
+          if [ "${SYNTHETIC:-false}" = "true" ]; then ARGS+=(--mode synthetic --no-tts); fi
+          python phase3_produce.py "${ARGS[@]}" | tee production.json
 
       - name: Upload production artifacts
         if: always()

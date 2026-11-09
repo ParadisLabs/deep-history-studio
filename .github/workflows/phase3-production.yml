@@ -59,6 +59,12 @@ jobs:
           if [ "${SYNTHETIC:-false}" = "true" ]; then ARGS+=(--mode synthetic --no-tts); fi
           python phase3_produce.py "${ARGS[@]}" | tee production.json
 
+      - name: Report QA result to OpsHub
+        if: always()
+        env:
+          OPSHUB_STUDIO: deep-history
+        run: python report_production.py production.json
+
       - name: Upload production artifacts
         if: always()
         uses: actions/upload-artifact@v4

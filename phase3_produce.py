@@ -21,6 +21,9 @@ from shared.production import runner  # noqa: E402
 from shared.production.providers.chain import ProviderChain  # noqa: E402
 from shared.production.providers.gemini import GeminiProvider  # noqa: E402
 from shared.production.providers.groq import GroqProvider  # noqa: E402
+from shared.production.providers.internet_archive import InternetArchiveProvider  # noqa: E402
+from shared.production.providers.pixabay import PixabayProvider  # noqa: E402
+from shared.production.providers.wikimedia import WikimediaProvider  # noqa: E402
 from shared.production.render import ensure_tools  # noqa: E402
 from shared.production.synthetic import SyntheticLLM  # noqa: E402
 from shared.production.usage import UsageLedger  # noqa: E402
@@ -77,9 +80,21 @@ def main(argv: List[str]) -> int:
     os.makedirs(outdir, exist_ok=True)
     ledger = UsageLedger(os.path.join(outdir, "usage.json"))
 
+    # Synthetic test runs never touch the network. Real runs try Pixabay (when
+    # keyed), then Wikimedia Commons, then the Internet Archive, then a visibly
+    # labelled synthetic card.
+    asset_sources: List[Any] = []
+    if args.mode != "synthetic":
+        pixabay = PixabayProvider(env, cache_path=os.path.join(outdir, "pixabay-cache.json"),
+                                  ledger=ledger)
+        if pixabay.configured():
+            asset_sources.append(pixabay)
+        asset_sources.extend([WikimediaProvider(env), InternetArchiveProvider(env)])
+
     ctx: Dict[str, Any] = {
         "llm": build_llm(env, args.mode, args.topic),
         "ledger": ledger,
+        "asset_sources": asset_sources,
         "outdir": outdir,
         "allow_tts": not args.no_tts,
         "ken_burns": True,
@@ -92,7 +107,8 @@ def main(argv: List[str]) -> int:
         "voice_tr": env.get("TTS_VOICE_TR", "tr-TR-AhmetNeural"),
     }
 
-    summary = runner.run_all(ctx, topic=args.topic, studios_to_run=[studio], dedupe=True)
+    summary = runner.run_all(ctx, topic=args.topic, studios_to_run=[studio], dedupe=True,
+                              job_id=os.environ.get("OPSHUB_JOB_ID") or None)
     print(json.dumps(summary, indent=1, default=str) if args.json
           else f"{studio}: {summary['statuses']}")
     return 1 if summary["failed_or_cancelled"] else 0

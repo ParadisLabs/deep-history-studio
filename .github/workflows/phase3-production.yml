@@ -1,0 +1,79 @@
+name: Phase 3 production
+
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "Optional topic brief"
+        required: false
+      synthetic:
+        description: "Use deterministic synthetic content (no AI calls)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: phase3-production
+  cancel-in-progress: false
+
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+      HUB_URL: ${{ secrets.HUB_URL }}
+      HUB_WEBHOOK_SECRET: ${{ secrets.HUB_WEBHOOK_SECRET }}
+      OPSHUB_JOB_ID: ${{ github.event.client_payload.job_id }}
+      LANDSCAPE_SECONDS: "480"
+      LANDSCAPE_FPS: "15"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install FFmpeg and fonts
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          ffmpeg -version | head -1
+          ffprobe -version | head -1
+
+      - name: Install Python deps
+        run: pip install -r requirements.txt
+
+      - name: Produce (vertical + landscape, H.264/AAC)
+        run: |
+          ARGS="--out artifacts/production --json"
+          if [ "${{ inputs.topic }}" != "" ]; then ARGS="$ARGS --topic \"${{ inputs.topic }}\""; fi
+          if [ "${{ inputs.synthetic }}" = "true" ]; then ARGS="$ARGS --mode synthetic --no-tts"; fi
+          eval python phase3_produce.py $ARGS | tee production.json
+
+      - name: Upload production artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase3-production
+          path: |
+            artifacts/production/**/*.mp4
+            artifacts/production/**/*.srt
+            artifacts/production/**/manifest.json
+            artifacts/production/usage.json
+            production.json
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase3-logs
+          path: production.json
+          if-no-files-found: ignore
+          retention-days: 14
